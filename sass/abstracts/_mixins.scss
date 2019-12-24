@@ -22,14 +22,14 @@
   }
 }
 @mixin mobile{
-  @media only screen and (max-width: 5760px){
+  @media only screen and (max-width: 576px){
     @content
   }
 }
 @mixin setup-text($fs,$fw){
   font-size: $fs;
   font-weight: $fw;
-  color: $cl-white;
+  color: $c-wh;
 }
 @mixin mb-50(){
   margin-bottom: 50px;

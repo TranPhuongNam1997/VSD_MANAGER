@@ -14,12 +14,15 @@ a, a:hover, a:focus {
 p {
   margin: 0; }
 
-input, textarea {
-  outline: none; }
-
 img {
   max-width: 100%; }
 
+@font-face {
+  font-family: 'UTM Avo';
+  src: url("../fonts/UTMAvo.eot");
+  src: url("../fonts/UTMAvo.eot?#iefix") format("embedded-opentype"), url("../fonts/UTMAvo.woff2") format("woff2"), url("../fonts/UTMAvo.woff") format("woff"), url("../fonts/UTMAvo.ttf") format("truetype"), url("../fonts/UTMAvo.svg#UTMAvo") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 *, *:before, *:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box; }
@@ -27,170 +30,144 @@ img {
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #F8F9FA;
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial"; }
 
-.container-login {
-  max-width: 1030px;
+.container {
+  max-width: 1214px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 6px; }
 
-.row-login {
-  margin: 0 35px; }
-
-.login-main {
-  position: relative;
-  background: url("../img/bg-login.png") no-repeat;
-  background-size: cover;
-  height: 100vh;
-  padding-top: 52px; }
-  .login-main .login-block {
-    width: 411px;
-    box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.26);
-    background: #164989;
-    padding: 58px 39px; }
-    .login-main .login-block .logo {
-      margin-top: 0px;
-      margin-bottom: 36px; }
-      .login-main .login-block .logo img {
-        width: 101px;
-        height: 82px; }
-    .login-main .login-block .slogan-vi {
-      font-size: 11px;
-      line-height: 13px;
-      color: #fff;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 3px; }
-    .login-main .login-block .slogan-en {
-      font-size: 11px;
-      line-height: 13px;
-      margin-bottom: 43px;
-      text-transform: uppercase;
-      color: #fff; }
-    .login-main .login-block .form-login .title-login {
-      font-size: 14px;
-      line-height: 16px;
-      color: #fff;
-      margin-bottom: 27px; }
-    .login-main .login-block .form-login .styled-input .form-enter-acc:focus ~ label, .login-main .login-block .form-login .styled-input .form-enter-acc:valid ~ label {
-      font-size: 11px;
-      color: #2C485B;
-      top: 0;
-      transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1); }
-    .login-main .login-block .form-login .styled-input {
-      margin-bottom: 11px;
-      position: relative; }
-      .login-main .login-block .form-login .styled-input .form-enter-acc {
-        background: #fff;
-        height: 57px;
-        line-height: 57px;
-        font-size: 14px;
-        color: #1a1a1a;
-        border-radius: 4px;
-        width: 100%;
-        border: none;
-        padding: 21px 24px; }
-        .login-main .login-block .form-login .styled-input .form-enter-acc ~ span {
-          display: block;
-          width: 0;
-          height: 3px;
-          background: #FAB019;
+.header {
+  background: #164989; }
+  .header .header-top .logo h1 {
+    margin: 12px 0 11px; }
+  .header .header-top .navigation-vsd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header .header-top .navigation-vsd .menu {
+      display: inline-block; }
+      .header .header-top .navigation-vsd .menu li {
+        float: left;
+        position: relative;
+        transition: all 0.3s; }
+        .header .header-top .navigation-vsd .menu li:after {
+          content: '';
           position: absolute;
-          bottom: 0;
-          left: 0;
-          transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1); }
-        .login-main .login-block .form-login .styled-input .form-enter-acc:focus ~ span {
-          width: 100%;
-          transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1); }
-      .login-main .login-block .form-login .styled-input label {
+          bottom: 17px;
+          left: 50%;
+          transform: translateX(-50%) scaleX(0);
+          transition: all 0.3s;
+          width: 28px;
+          height: 4px;
+          background: #fff;
+          border-radius: 30px; }
+        .header .header-top .navigation-vsd .menu li:hover:after {
+          transform: translateX(-50%) scaleX(1);
+          transition: all 0.3s; }
+        .header .header-top .navigation-vsd .menu li:hover {
+          background: #195493;
+          transition: all 0.3s; }
+        .header .header-top .navigation-vsd .menu li a {
+          display: block;
+          padding: 31px 13px 30px;
+          color: #fff; }
+    .header .header-top .navigation-vsd .account-vsd {
+      display: inline-block;
+      margin-left: 9px; }
+      .header .header-top .navigation-vsd .account-vsd .box-acc {
+        border-radius: 30px;
+        background: #205A99;
+        display: flex;
+        align-items: center;
+        padding: 6px 13px 6px 7px; }
+        .header .header-top .navigation-vsd .account-vsd .box-acc img {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+          margin-right: 10px; }
+        .header .header-top .navigation-vsd .account-vsd .box-acc span {
+          margin-right: 7px;
+          color: #fff; }
+        .header .header-top .navigation-vsd .account-vsd .box-acc i {
+          color: #fff; }
+
+.login-admin {
+  height: 100vh;
+  background: url("../img/bg-login.png") no-repeat center bottom;
+  position: relative; }
+  .login-admin .login-wrap .login-block {
+    width: 457px;
+    padding: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 576px) {
+      .login-admin .login-wrap .login-block {
+        width: 100%; } }
+    .login-admin .login-wrap .login-block .logo {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 43px; }
+      .login-admin .login-wrap .login-block .logo img {
+        width: 262px;
+        height: 112px; }
+    .login-admin .login-wrap .login-block .styled-input {
+      position: relative; }
+      .login-admin .login-wrap .login-block .styled-input label {
+        color: #2C485B;
         position: absolute;
         top: 21px;
-        left: 24px;
-        color: #2C485B;
-        transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
-        pointer-events: none; }
-    .login-main .login-block .form-login .capcha {
-      height: 57px;
-      margin-bottom: 11px;
-      background: #fff; }
-    .login-main .login-block .form-login .btn-login {
-      font-size: 14px;
-      line-height: 16px;
-      background: #FAB019;
-      font-weight: 700;
-      color: #fff;
-      border-radius: 4px;
-      margin-bottom: 30px;
-      height: 57px;
-      transition: all 0.3s; }
-      .login-main .login-block .form-login .btn-login:hover {
-        background: #efcb81;
-        transition: all 0.3s; }
-    .login-main .login-block .form-login .forgot-password {
-      display: inline-block;
-      color: #fff;
-      font-size: 14px;
-      line-height: 16px;
-      margin-bottom: 134px; }
-      .login-main .login-block .form-login .forgot-password:hover {
-        text-decoration: underline; }
-    .login-main .login-block .form-login .capcha, .login-main .login-block .form-login .btn-login, .login-main .login-block .form-login .forgot-password {
-      position: relative;
-      z-index: 10; }
-  .login-main .news {
-    width: 547px;
-    padding-top: 94px;
-    position: relative;
-    z-index: 10; }
-    .login-main .news .items-news .title-news {
-      margin-bottom: 38px; }
-      .login-main .news .items-news .title-news a {
-        color: #fff;
-        font-size: 33px;
-        line-height: 39px;
-        font-weight: 700;
-        display: block; }
-        .login-main .news .items-news .title-news a:hover {
-          color: #fab019; }
-    .login-main .news .items-news .time-update {
-      color: #fff;
-      font-size: 14px;
-      line-height: 16px;
-      margin-bottom: 27px; }
-    .login-main .news .items-news .box-img {
-      position: relative;
-      box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.59); }
-      .login-main .news .items-news .box-img:before {
-        content: '';
-        display: block;
-        padding-bottom: 55%; }
-      .login-main .news .items-news .box-img img {
+        left: 25px;
+        margin-bottom: 0;
+        pointer-events: none;
+        transition: all 0.3s;
+        font-family: 'UTM Avo'; }
+      .login-admin .login-wrap .login-block .styled-input input {
+        width: 100%;
+        height: 57px;
+        margin-bottom: 11px;
+        background: #DCE4EB;
+        padding: 21px 25px;
+        border-radius: 3px;
+        color: #000;
+        border: none;
+        outline: none; }
+        .login-admin .login-wrap .login-block .styled-input input:focus ~ span {
+          width: 100%;
+          transition: all 0.3s; }
+        .login-admin .login-wrap .login-block .styled-input input:valid ~ label {
+          top: 5px;
+          transition: all 0.3s; }
+      .login-admin .login-wrap .login-block .styled-input span {
+        height: 2px;
+        width: 0;
+        transition: all 0.3s;
         position: absolute;
-        top: 0;
         left: 0;
-        height: 100%; }
-  .login-main .foot-login {
-    color: #fff;
-    font-size: 11px;
-    position: absolute;
-    bottom: 34px;
-    width: 100%;
-    z-index: 10; }
-    .login-main .foot-login .copyright {
+        bottom: 11px;
+        background: #164989; }
+    .login-admin .login-wrap .login-block .btn-login {
+      width: 100%;
+      border: none;
+      border-radius: 3px;
+      background: #164989;
+      margin-top: 11px;
+      margin-bottom: 22px;
       color: #fff;
-      line-height: 13px; }
-    .login-main .foot-login .connect-social a {
-      color: #fff;
-      margin-left: 20px; }
-      .login-main .foot-login .connect-social a:hover {
-        color: #fab019; }
-  .login-main .bg-bot-login {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; }
+      height: 57px;
+      font-family: 'UTM Avo'; }
+    .login-admin .login-wrap .login-block .forgot-password {
+      text-align: center;
+      color: #0D4C7F;
+      display: block;
+      font-family: 'UTM Avo'; }
+      .login-admin .login-wrap .login-block .forgot-password:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

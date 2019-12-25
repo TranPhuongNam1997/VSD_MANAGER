@@ -276,6 +276,9 @@ html, body {
       .login-admin .login-wrap .login-block .forgot-password:hover {
         text-decoration: underline; }
 
+.main {
+  padding-top: 77px; }
+
 .breadcrumb-vsd {
   padding: 24px 20px;
   display: flex;

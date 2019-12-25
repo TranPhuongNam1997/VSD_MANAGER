@@ -10,7 +10,15 @@ body{
   margin: 0;
   padding: 0;
   background: #F8F9FA;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   font-family: "Arial";
+}
+input:focus,textarea:focus{
+  //outline: none;
+  //box-shadow: 0 0 4px 1px #164989;
+}
+.clearfix-9{
+  height: 9px;
+  clear: both;
 }

@@ -31,9 +31,13 @@ body {
   margin: 0;
   padding: 0;
   background: #F8F9FA;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   font-family: "Arial"; }
+
+.clearfix-9 {
+  height: 9px;
+  clear: both; }
 
 .container {
   max-width: 1214px;
@@ -41,8 +45,44 @@ body {
   margin: 0 auto;
   padding: 0 6px; }
 
+.row-vsd {
+  margin: 0 -6px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.row-vsd:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.row-foot {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.col-vsd-6 {
+  padding: 0 6px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  margin-bottom: 12px; }
+
+.col-vsd-12 {
+  padding: 0 6px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative; }
+
 .header {
-  background: #164989; }
+  background: #164989;
+  position: fixed;
+  width: 100%;
+  z-index: 9; }
   .header .header-top .logo h1 {
     margin: 12px 0 11px; }
   .header .header-top .navigation-vsd {
@@ -74,17 +114,22 @@ body {
           transition: all 0.3s; }
         .header .header-top .navigation-vsd .menu li a {
           display: block;
-          padding: 31px 13px 30px;
-          color: #fff; }
+          padding: 31px 11px 30px;
+          color: #fff;
+          font-size: 14px; }
     .header .header-top .navigation-vsd .account-vsd {
       display: inline-block;
       margin-left: 9px; }
       .header .header-top .navigation-vsd .account-vsd .box-acc {
+        position: relative;
         border-radius: 30px;
         background: #205A99;
         display: flex;
         align-items: center;
-        padding: 6px 13px 6px 7px; }
+        padding: 6px 13px 6px 7px;
+        cursor: pointer; }
+        .header .header-top .navigation-vsd .account-vsd .box-acc .name-admin {
+          font-size: 14px; }
         .header .header-top .navigation-vsd .account-vsd .box-acc img {
           width: 24px;
           height: 24px;
@@ -94,7 +139,60 @@ body {
           margin-right: 7px;
           color: #fff; }
         .header .header-top .navigation-vsd .account-vsd .box-acc i {
-          color: #fff; }
+          color: #fff;
+          margin-top: -6px; }
+        .header .header-top .navigation-vsd .account-vsd .box-acc:hover .box-change-logout {
+          display: block; }
+        .header .header-top .navigation-vsd .account-vsd .box-acc .box-change-logout {
+          display: none;
+          padding-top: 10px;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 200px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.14); }
+          .header .header-top .navigation-vsd .account-vsd .box-acc .box-change-logout:after {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%) rotate(180deg);
+            border-top: 8px solid #fff;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 8px solid transparent; }
+          .header .header-top .navigation-vsd .account-vsd .box-acc .box-change-logout ul li {
+            display: block;
+            border-bottom: 1px solid #76a6e2; }
+            .header .header-top .navigation-vsd .account-vsd .box-acc .box-change-logout ul li:last-child {
+              border-bottom: 0; }
+              .header .header-top .navigation-vsd .account-vsd .box-acc .box-change-logout ul li:last-child a {
+                border-bottom-right-radius: 4px;
+                border-bottom-left-radius: 4px; }
+            .header .header-top .navigation-vsd .account-vsd .box-acc .box-change-logout ul li:first-child a {
+              border-top-left-radius: 4px;
+              border-top-right-radius: 4px; }
+            .header .header-top .navigation-vsd .account-vsd .box-acc .box-change-logout ul li a {
+              display: block;
+              padding: 14px 10px;
+              text-align: center;
+              background: #fff; }
+              .header .header-top .navigation-vsd .account-vsd .box-acc .box-change-logout ul li a:hover {
+                color: #164989;
+                background: #eee; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -150px; }
+
+.push {
+  height: 150px;
+  /* .push must be the same height as .footer */ }
 
 .login-admin {
   height: 100vh;
@@ -127,17 +225,19 @@ body {
         margin-bottom: 0;
         pointer-events: none;
         transition: all 0.3s;
-        font-family: 'UTM Avo'; }
+        font-family: 'UTM Avo';
+        font-size: 14px; }
       .login-admin .login-wrap .login-block .styled-input input {
         width: 100%;
         height: 57px;
         margin-bottom: 11px;
         background: #DCE4EB;
-        padding: 21px 25px;
+        padding: 26px 25px 14px;
         border-radius: 3px;
         color: #000;
         border: none;
-        outline: none; }
+        outline: none;
+        font-size: 14px; }
         .login-admin .login-wrap .login-block .styled-input input:focus ~ span {
           width: 100%;
           transition: all 0.3s; }
@@ -152,6 +252,8 @@ body {
         left: 0;
         bottom: 11px;
         background: #164989; }
+    .login-admin .login-wrap .login-block .noti-status-login {
+      color: #d93025; }
     .login-admin .login-wrap .login-block .btn-login {
       width: 100%;
       border: none;
@@ -161,13 +263,230 @@ body {
       margin-bottom: 22px;
       color: #fff;
       height: 57px;
-      font-family: 'UTM Avo'; }
+      font-family: 'UTM Avo';
+      font-size: 14px; }
+      .login-admin .login-wrap .login-block .btn-login:hover {
+        background: #08336b; }
     .login-admin .login-wrap .login-block .forgot-password {
       text-align: center;
       color: #0D4C7F;
       display: block;
-      font-family: 'UTM Avo'; }
+      font-family: 'UTM Avo';
+      font-size: 14px; }
       .login-admin .login-wrap .login-block .forgot-password:hover {
         text-decoration: underline; }
+
+.breadcrumb-vsd {
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .breadcrumb-vsd .bread-morni span {
+    font-size: 13px; }
+    .breadcrumb-vsd .bread-morni span img {
+      width: 18px;
+      height: 14px;
+      vertical-align: text-top; }
+    .breadcrumb-vsd .bread-morni span .bread-light {
+      display: none; }
+    .breadcrumb-vsd .bread-morni span a:hover {
+      color: #164989; }
+  .breadcrumb-vsd .bread-morni .caret-right {
+    padding: 0 14px; }
+    .breadcrumb-vsd .bread-morni .caret-right i {
+      color: #3D3D3D; }
+    .breadcrumb-vsd .bread-morni .caret-right:last-child {
+      color: #164989; }
+  .breadcrumb-vsd .bread-morni .caret-right:last-child i {
+    color: #164989; }
+  .breadcrumb-vsd .bread-morni span:first-child .bread-light {
+    display: none; }
+  .breadcrumb-vsd .bread-morni span:last-child a {
+    color: #164989; }
+  .breadcrumb-vsd .bread-morni span:last-child .bread-dark {
+    display: none; }
+  .breadcrumb-vsd .bread-morni span:last-child .bread-light {
+    display: inline-block; }
+  .breadcrumb-vsd .search input {
+    border: none;
+    border-left: 1px solid #ededed;
+    background: transparent;
+    padding: 6px 5px 6px 23px;
+    outline: none; }
+    .breadcrumb-vsd .search input::-webkit-input-placeholder {
+      /* Edge */
+      font-style: italic;
+      color: #164989; }
+    .breadcrumb-vsd .search input:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-style: italic;
+      color: #164989; }
+    .breadcrumb-vsd .search input::placeholder {
+      font-style: italic;
+      color: #164989; }
+  .breadcrumb-vsd .search button {
+    border: none;
+    background: none; }
+    .breadcrumb-vsd .search button img {
+      width: 15px;
+      height: 15px; }
+
+.sc-data-top {
+  margin-bottom: 20px; }
+
+.title-wrap {
+  display: inline-block;
+  color: #164989;
+  font-weight: 700;
+  padding: 10px 15px 10px 4px;
+  border-bottom: 2px solid #164989;
+  margin-bottom: 13px; }
+  .title-wrap span:last-child {
+    color: #EA2642; }
+
+.zone-white {
+  background: #fff;
+  border-radius: 6px;
+  padding: 11px 15px;
+  border: 1px solid #E8E8E8;
+  padding-bottom: 53px;
+  height: 100%;
+  margin-bottom: 12px; }
+  .zone-white .items-handling {
+    padding: 11px 25px;
+    border-bottom: 1px solid #ccc; }
+    .zone-white .items-handling .name-handling {
+      color: #A37400;
+      margin-bottom: 10px;
+      display: block; }
+      .zone-white .items-handling .name-handling:hover {
+        text-decoration: underline; }
+    .zone-white .items-handling.profile-accepted {
+      background: #EDF5F8; }
+      .zone-white .items-handling.profile-accepted .name-handling {
+        color: #319925; }
+    .zone-white .items-handling.profile-rejection {
+      background: #EDF5F8; }
+      .zone-white .items-handling.profile-rejection .name-handling {
+        color: #912020; }
+    .zone-white .items-handling .received-editlast li {
+      display: inline-block;
+      margin-right: 45px;
+      font-size: 12px; }
+      .zone-white .items-handling .received-editlast li .vsd-96 {
+        color: #969696;
+        margin-right: 10px; }
+      .zone-white .items-handling .received-editlast li .vsd-23 {
+        color: #232323; }
+
+.items-job-needprocess {
+  padding: 12px 8px 12px;
+  border-bottom: 1px solid #ccc; }
+  .items-job-needprocess:last-child {
+    border-bottom: none; }
+  .items-job-needprocess .title-job {
+    color: #232323;
+    margin-bottom: 8px;
+    display: block;
+    line-height: 17px; }
+    .items-job-needprocess .title-job:hover {
+      text-decoration: underline;
+      color: #164989; }
+  .items-job-needprocess .time-job span {
+    color: #969696;
+    margin-right: 5px;
+    font-size: 12px; }
+
+.taskremind-block {
+  display: flex;
+  align-items: center; }
+  .taskremind-block .txt-taskremind {
+    color: #232323;
+    margin-right: 29px; }
+  .taskremind-block .ip-remind {
+    width: 417px;
+    height: 35px;
+    border: 1px solid #E8E8E8;
+    margin-right: 13px;
+    padding-left: 14px;
+    padding-right: 14px; }
+    .taskremind-block .ip-remind::-webkit-input-placeholder {
+      font-style: italic;
+      color: #969696; }
+    .taskremind-block .ip-remind:-ms-input-placeholder {
+      font-style: italic;
+      color: #969696; }
+    .taskremind-block .ip-remind::placeholder {
+      font-style: italic;
+      color: #969696; }
+  .taskremind-block .btn-add {
+    border-radius: 3px;
+    color: #fff;
+    background: #164989;
+    padding: 0 43px;
+    height: 35px;
+    border: none;
+    text-transform: uppercase; }
+    .taskremind-block .btn-add:hover {
+      background: #08336b; }
+
+.job-today .title-job-today {
+  color: #164989;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0 13px; }
+  .job-today .title-job-today span:last-child {
+    color: #EA2642; }
+.job-today .list-job-today .items-job-block .items-job-needprocess:last-child {
+  border-bottom: 1px solid #ccc; }
+.job-today .list-job-today .items-job-block:last-child .items-job-needprocess {
+  border-bottom: none; }
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 13px;
+  border-top: 3px solid #164989; }
+
+.logo-bot a img {
+  width: 121px;
+  height: 78px; }
+
+.title-foot {
+  font-size: 14px;
+  color: #164989;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+.contact {
+  display: block;
+  margin-bottom: 10px;
+  color: #232323; }
+  .contact svg {
+    vertical-align: baseline;
+    margin-right: 8px; }
+
+#back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 31px;
+  height: 31px;
+  background: #164989;
+  color: #fff;
+  text-align: center;
+  line-height: 31px;
+  font-size: 18px;
+  font-weight: bold;
+  background-size: 100% 100%;
+  display: none;
+  z-index: 100;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px; }
+  #back-to-top:hover {
+    background: #08336b; }
 
 /*# sourceMappingURL=main.css.map */

@@ -20,6 +20,14 @@
   display: table;
   clear: both;
 }
+.row-form{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 .row-foot{
   display: -ms-flexbox;
   display: flex;
@@ -40,4 +48,50 @@
   flex: 0 0 100%;
   max-width: 100%;
   position: relative;
+}
+.col-vsd-20{
+  padding: 0 6px;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+  position: relative;
+}
+.col-vsd-80{
+  padding: 0 6px;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  max-width: 80%;
+  position: relative;
+}
+.col-vsd-35{
+  padding: 0 6px;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  max-width: 35%;
+  position: relative;
+}
+.col-vsd-65{
+  padding: 0 6px;
+  -ms-flex: 0 0 65%;
+  flex: 0 0 65%;
+  max-width: 65%;
+  position: relative;
+}
+.title-input{
+  //padding: 0 6px;
+  //-ms-flex: 0 0 35%;
+  //flex: 0 0 35%;
+  //max-width: 35%;
+  //position: relative;
+  max-width: 160px;
+  width: 100%;
+  padding-right: 12px;
+}
+.input-enter{
+  //padding: 0 6px;
+  //-ms-flex: 0 0 65%;
+  //flex: 0 0 65%;
+  //max-width: 65%;
+  //position: relative;
+  width: calc(100% - 160px);
 }

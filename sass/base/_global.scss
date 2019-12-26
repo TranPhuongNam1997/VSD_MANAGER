@@ -22,3 +22,79 @@ input:focus,textarea:focus{
   height: 9px;
   clear: both;
 }
+.formgroup-vsd{
+  margin-bottom: 9px;
+}
+.title-info{
+  display: inline-block;
+  font-size: 14px;
+  border-bottom: 2px solid $c-bl;
+  font-weight: 700;
+  padding: 10px 3px 7px;
+  color: $c-bl;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  &.title-small{
+    display: block;
+    text-transform: none;
+    border-bottom: 1px solid $c-bl;
+    margin-bottom: 13px;
+  }
+}
+.title-input{
+  color: #606060;
+}
+.input-enter{
+  input{
+    width: 100%;
+    border: 1px solid #cecece;
+    height: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #262626;
+    border-radius: 3px;
+  }
+  input[disabled="disabled"]{
+    background: #EDEDED;
+    color: #A0A0A0;
+  }
+  .datepicker-vsd{
+    background: #fff url(../img/icon-cacular.svg) no-repeat;
+    background-position: center right 12px;
+    cursor: pointer;
+  }
+  .items-select{
+    width: 100%;
+    border: 1px solid #cecece;
+    height: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #262626;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  textarea{
+    width: 100%;
+    border: 1px solid #cecece;
+    height: 64px;
+    padding: 8px 16px;
+    color: #262626;
+    border-radius: 3px;
+    resize: vertical;
+  }
+}
+.zone-white-x{
+  padding: 10px 21px;
+  background: $c-wh;
+  border-radius: 6px;
+  border: 1px solid #E8E8E8;
+}
+.utiliti-handling{
+  padding: 15px 0 20px;
+  text-align: right;
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

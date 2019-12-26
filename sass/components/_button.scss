@@ -2,3 +2,26 @@
 // Components :: Button
 // ======================================================
 
+.btn-blue,.btn-light-blue{
+  width: 147px;
+  height: 33px;
+  background: $c-bl;
+  color: $c-wh;
+  margin-left: 7px;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.btn-blue{
+  &:hover{
+    background: #306db9;
+  }
+}
+.btn-light-blue{
+  background: #D2EAFF;
+  color: $c-bl;
+  &:hover{
+    background: #a3d0f7;
+    transition: all 0.3s;
+  }
+}

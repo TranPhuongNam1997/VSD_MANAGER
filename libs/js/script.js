@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+
+    //nut scroll top
+
     $("#back-to-top").click(function () {
         $("html, body").animate({scrollTop : 0},"slow");
         return false;
@@ -13,6 +16,8 @@ $( document ).ready(function() {
     });
 });
 $(function() {
+
+    // slider js
     $(".slider-news").owlCarousel({
         items: 1,
         responsive: {
@@ -51,5 +56,12 @@ $(function() {
         videoHeight: false,
         videoWidth: false,
     });
+
+    //datetimepicker
+    // $('input[name="daterange"]').daterangepicker({
+    //     opens: 'left'
+    // }, function(start, end, label) {
+    //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    // });
 });
 

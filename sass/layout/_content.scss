@@ -189,8 +189,9 @@ html,body{
       border: none;
       border-left: 1px solid #a1b5ce;
       background: transparent;
-      padding: 6px 5px 6px 23px;
+      padding: 6px 29px 6px 23px;
       outline: none;
+      width: 211px;
       &::-webkit-input-placeholder { /* Edge */
         font-style: italic;
         color: $c-bl;
@@ -232,10 +233,10 @@ html,body{
   display: inline-block;
   color: $c-bl;
   font-weight: 700;
-  padding: 10px 15px 10px 4px;
+  padding: 10px 15px 7px 4px;
   border-bottom: 2px solid $c-bl;
   margin-bottom: 13px;
-  span:last-child{
+  span:nth-child(2){
     color: #EA2642;
   }
 }
@@ -249,7 +250,7 @@ html,body{
   margin-bottom: 12px;
   .items-handling{
     padding: 11px 25px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #dedede;
 
     .name-handling{
       color: #A37400;
@@ -322,7 +323,7 @@ html,body{
     margin-right: 29px;
   }
   .ip-remind{
-    width: 417px;
+    width: 350px;
     height: 35px;
     border: 1px solid #E8E8E8;
     margin-right: 13px;
@@ -342,16 +343,18 @@ html,body{
     }
   }
   .btn-add{
-    border-radius: 3px;
-    color: $c-wh;
-    background: $c-bl;
-    padding: 0 43px;
+    margin-right: 50px;
+  }
+  .datetimepicker-vsd{
+    width: 300px;
     height: 35px;
-    border: none;
-    text-transform: uppercase;
-    &:hover{
-      background: #08336b;
-    }
+    border: 1px solid #E8E8E8;
+    margin-right: 13px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background: #fff url(../img/icon-cacular.svg) no-repeat;
+    background-position: center right 12px;
+    cursor: pointer;
   }
 }
 
@@ -371,6 +374,37 @@ html,body{
       &:nth-child(n+3) .items-job-needprocess{
         border-top: 1px solid #ccc;
       }
+    }
+  }
+}
+
+.search-field{
+  .items-field{
+    width: 182px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+    .label-field{
+      color: #3D3D3D;
+      margin-bottom: 8px;
+    }
+    input{
+      width: 100%;
+      border: 1px solid #cecece;
+      height: 35px;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: #262626;
+      border-radius: 3px;
+    }
+    select{
+      width: 100%;
+      border: 1px solid #cecece;
+      height: 35px;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: #262626;
+      border-radius: 3px;
+      cursor: pointer;
     }
   }
 }

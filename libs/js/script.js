@@ -14,6 +14,69 @@ $( document ).ready(function() {
             $('#back-to-top').hide();
         }
     });
+
+    //script sidebar
+
+    $(".menucate-lv2").hide();
+    $(".rotate-down .menucate-lv2").show();
+    $(".menucate-lv1 > li > a").click(function(){
+        $(".menucate-lv1 > li.hasdrop-cate").removeClass('rotate-down');
+
+        $(".menucate-lv2").slideUp();
+        if(!$(this).next(".menucate-lv2").is(":visible"))
+        {
+            $(this).next(".menucate-lv2").slideDown();
+            $(this).parent().addClass('rotate-down');
+        }
+    });
+
+    // custom datepicker
+
+    jQuery('.datepicker-vsd').datetimepicker({
+        timepicker:false,
+        format: 'd/m/Y'
+    });
+    jQuery('.datetimepicker-vsd').datetimepicker({
+        format: 'd/m/Y H:m'
+    });
+    $.datetimepicker.setLocale('vi');
+
+    //checkvalidate
+    $(".form-check-validate").validate(
+        {
+            rules:
+                {
+                    tentcph:
+                        {
+                            required: true
+                        },
+                    tentienganh:
+                        {
+                            required: true
+                        },
+                    noicap:
+                        {
+                            required: true
+                        }
+                },
+            messages:
+                {
+                    tentcph:
+                        {
+                            required: "Vui lòng nhập Tên TCPH"
+                        },
+                    tentienganh:
+                        {
+                            required: "Vui lòng nhập Tên tiếng anh"
+                        },
+                    noicap:
+                        {
+                            required: "Vui lsfsdafsd"
+                        }
+
+                }
+        });
+
 });
 $(function() {
 
@@ -63,5 +126,8 @@ $(function() {
     // }, function(start, end, label) {
     //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
     // });
+
+
+
 });
 

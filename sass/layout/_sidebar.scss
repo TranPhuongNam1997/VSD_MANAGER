@@ -27,6 +27,10 @@
         display: block;
         font-size: 14px;
         font-weight: 700;
+        &:hover{
+          background: #D2EAFF;
+          color: $c-bl;
+        }
       }
       .menucate-lv2{
         padding: 18px 10px 0 39px;
@@ -60,7 +64,7 @@
 
           }
         }
-        li.active{
+        li.active-child{
           &:after{
             background: #075fcf;
           }
@@ -84,9 +88,18 @@
       position: absolute;
       width: 8px;
       height: 5px;
-      background: url("../img/sort-down-19.svg");
+      background: url("../img/icon-rotate-down-19.svg");
       top: 17px;
       right: 20px;
+      transition: all 0.3s;
+    }
+    >li.hasdrop-cate.active:after{
+      content: '';
+      background: url("../img/rotate-blue-20-20.svg");
     }
   }
+}
+.hasdrop-cate.rotate-down:after{
+  transition: all 0.3s;
+  transform: rotate(180deg);
 }

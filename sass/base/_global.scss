@@ -32,7 +32,7 @@ input:focus,textarea:focus{
   font-weight: 700;
   padding: 10px 3px 7px;
   color: $c-bl;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   &.title-small{
     display: block;
@@ -43,6 +43,9 @@ input:focus,textarea:focus{
 }
 .title-input{
   color: #606060;
+  span{
+    color: #ED1111;
+  }
 }
 .input-enter{
   input{
@@ -80,7 +83,7 @@ input:focus,textarea:focus{
     padding: 8px 16px;
     color: #262626;
     border-radius: 3px;
-    resize: vertical;
+    resize: none;
   }
 }
 .zone-white-x{
@@ -96,5 +99,38 @@ input:focus,textarea:focus{
     content: '';
     display: table;
     clear: both;
+  }
+}
+.alert-required{
+  padding-top: 5px;
+  display: block;
+  svg{
+    vertical-align: text-bottom;
+  }
+  span{
+    color: #ED1111;
+  }
+}
+label.error {
+  color: #ED1111;
+  padding-top: 5px;
+  padding-left: 24px;
+  background: url(../img/icon-checkvalidate.svg) no-repeat top 4px left;
+  background-size: 16px;
+  margin-bottom: 0;
+}
+input.error{
+  border: 1px solid #ff8f8f;
+}
+.btn-add{
+  border-radius: 3px;
+  color: $c-wh;
+  background: $c-bl;
+  padding: 0 43px;
+  height: 35px;
+  border: none;
+  text-transform: uppercase;
+  &:hover{
+    background: #08336b;
   }
 }

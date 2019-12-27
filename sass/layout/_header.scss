@@ -11,6 +11,11 @@
     .logo{
       h1{
         margin: 12px 0 11px;
+        a{
+          width: 300px;
+          height: 50px;
+          display: block;
+        }
       }
     }
     .navigation-vsd{
@@ -23,6 +28,13 @@
           float: left;
           position: relative;
           transition: all 0.3s;
+          &.active{
+            background: #195493;
+          }
+          &.active:after{
+            content: '';
+            transform: translateX(-50%) scaleX(1);
+          }
           &:after{
             content: '';
             position: absolute;

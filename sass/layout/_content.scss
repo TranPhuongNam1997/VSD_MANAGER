@@ -579,3 +579,31 @@ html,body{
     }
   }
 }
+
+//end css table
+
+.field-box{
+  margin: 0 -3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .title-left{
+    padding: 0 3px;
+    width: 30%;
+    float: left;
+    color: #606060;
+  }
+  .txt-data-field{
+    padding: 10px 3px 10px 0;
+    width: 70%;
+    float: left;
+    border-bottom: 1px solid #cecece;
+    color: #191919;
+  }
+}

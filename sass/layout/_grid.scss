@@ -20,6 +20,26 @@
   display: table;
   clear: both;
 }
+.row-10{
+  margin: 0 -10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.row-10:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.col-pc-6{
+  padding: 0 10px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  margin-bottom: 7px;
+}
 .row-form{
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +81,13 @@
   -ms-flex: 0 0 80%;
   flex: 0 0 80%;
   max-width: 80%;
+  position: relative;
+}
+.col-vsd-60{
+  padding: 0 6px;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%;
   position: relative;
 }
 .col-vsd-35{

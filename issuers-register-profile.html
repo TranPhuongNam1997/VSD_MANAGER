@@ -61,18 +61,23 @@
             <div class="container">
                 <div class="breadcrumb-vsd ">
                     <div class="bread-morni">
-                        <span>
-                            <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
-                            <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
-                            <a href="#">Quản trị TCPH</a>
-                        </span>
+                            <span>
+                                <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
+                                <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
+                                <a href="#">Quản trị TCPH</a>
+                            </span>
                         <span class="caret-right">
-                            <i class="fa fa-caret-right"></i>
-                        </span>
+                                <i class="fa fa-caret-right"></i>
+                            </span>
                         <span>
-                            <a href="#">Quản trị TCPH</a>
-                        </span>
-
+                                <a href="#">Thông tin hồ sơ</a>
+                            </span>
+                        <span class="caret-right">
+                                <i class="fa fa-caret-right"></i>
+                            </span>
+                        <span>
+                                <a href="#">Hồ sơ đăng ký lần đầu</a>
+                            </span>
                     </div>
                     <div class="search">
                         <input type="text" placeholder="Tìm kiếm">
@@ -95,7 +100,7 @@
                                 <li class="hasdrop-cate rotate-down">
                                     <a href="#">Thông tin hồ sơ</a>
                                     <ul class="menucate-lv2">
-                                        <li><a href="issuers-register-profile.html">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
+                                        <li class="active-child"><a href="http://google.com">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
                                         <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
                                         <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
                                         <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
@@ -104,18 +109,6 @@
                                         <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
                                     </ul>
                                 </li>
-                                <!--                               <li class="hasdrop-cate">-->
-                                <!--                                   <a href="#">Thông tin hồ sơ</a>-->
-                                <!--                                    <ul class="menucate-lv2">-->
-                                <!--                                        <li class="active"><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                    </ul>-->
-                                <!--                                </li>-->
                             </ul>
                         </nav>
                     </div>
@@ -127,100 +120,143 @@
                                 <div class="search-field-block">
                                     <div class="search-detail">
                                         <div class="items-field">
+                                            <div class="label-field">Loại hình hồ sơ đăng ký lần đầu</div>
+                                            <select>
+                                                <option>-All</option>
+                                                <option>-All</option>
+                                                <option>-All</option>
+                                            </select>
+                                        </div>
+                                        <div class="items-field">
                                             <div class="label-field">Tên doanh nghiệp</div>
                                             <input type="text">
                                         </div>
                                         <div class="items-field">
-                                            <div class="label-field">Loại hình doanh nghiệp</div>
-                                            <select>
-                                                <option>-All</option>
-                                                <option>-All</option>
-                                                <option>-All</option>
-                                            </select>
-                                        </div>
-                                        <div class="items-field">
-                                            <div class="label-field">Trong nước/nước ngoài</div>
-                                            <select>
-                                                <option>-All</option>
-                                                <option>-All</option>
-                                                <option>-All</option>
-                                            </select>
+                                            <div class="label-field">Tên cổ phiếu</div>
+                                            <input type="text">
                                         </div>
                                         <div class="zone-search">
                                             <button class="btn-search-list">Tìm kiếm</button>
                                         </div>
                                     </div>
-                                    <button class="add-items-list">
-                                        <img src="img/icon-add.png" alt="ảnh">
-                                    <!-- <span class="tooltip-add">Thêm mới</span>-->
+                                    <button class="btn-render">
+                                        <img src="img/icon-render.png" alt="ảnh">
+                                        <span>Kết xuất</span>
                                     </button>
                                 </div>
 
                                 <!--  begin table-->
                                 <div class="table-data-wrap">
                                     <div class="tbl-data-block">
-                                        <table class="tbltype-1">
+                                        <table class="tbltype-2">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center">STT</th>
-                                                    <th>Tên doanh nghiệp</th>
-                                                    <th>Mã DN</th>
-                                                    <th>Tên viết tắt</th>
-                                                    <th>Địa chỉ trụ sở chính</th>
-                                                    <th>Loại hình DN</th>
+                                                    <th class="text-center" rowspan="2">STT</th>
+                                                    <th rowspan="2">Mã trái phiếu</th>
+                                                    <th rowspan="2">Mã DN</th>
+                                                    <th rowspan="2">Mệnh giá</th>
+                                                    <th rowspan="2">Loại cổ phần</th>
+                                                    <th colspan="2" class="th-private">Tổng số CP đã phát hành</th>
+                                                    <th rowspan="2">Tổng giá trị CP đã phát hành</th>
+                                                    <th rowspan="2">Chức năng</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="th-bl">CP phổ thông</th>
+                                                    <th class="th-yl">CP ưu đãi</th>
                                                 </tr>
 
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
                                                     <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>ACE</td>
+                                                    <td>10.000</td>
+                                                    <td>CP phổ thông</td>
+                                                    <td class="td-bl">10.000</td>
+                                                    <td class="td-yl">5.000</td>
+                                                    <td class="text-center">100.000.000</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <img src="img/icon-info-19.svg" alt="ảnh">
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
                                                     <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>ACE</td>
+                                                    <td>10.000</td>
+                                                    <td>CP phổ thông</td>
+                                                    <td class="td-bl">10.000</td>
+                                                    <td class="td-yl">5.000</td>
+                                                    <td class="text-center">100.000.000</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <img src="img/icon-info-19.svg" alt="ảnh">
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
                                                     <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>ACE</td>
+                                                    <td>10.000</td>
+                                                    <td>CP phổ thông</td>
+                                                    <td class="td-bl">10.000</td>
+                                                    <td class="td-yl">5.000</td>
+                                                    <td class="text-center">100.000.000</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <img src="img/icon-info-19.svg" alt="ảnh">
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
                                                     <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>ACE</td>
+                                                    <td>10.000</td>
+                                                    <td>CP phổ thông</td>
+                                                    <td class="td-bl">10.000</td>
+                                                    <td class="td-yl">5.000</td>
+                                                    <td class="text-center">100.000.000</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <img src="img/icon-info-19.svg" alt="ảnh">
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
                                                     <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>ACE</td>
+                                                    <td>10.000</td>
+                                                    <td>CP phổ thông</td>
+                                                    <td class="td-bl">10.000</td>
+                                                    <td class="td-yl">5.000</td>
+                                                    <td class="text-center">100.000.000</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <img src="img/icon-info-19.svg" alt="ảnh">
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
                                                     <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>ACE</td>
+                                                    <td>10.000</td>
+                                                    <td>CP phổ thông</td>
+                                                    <td class="td-bl">10.000</td>
+                                                    <td class="td-yl">5.000</td>
+                                                    <td class="text-center">100.000.000</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <img src="img/icon-info-19.svg" alt="ảnh">
+                                                        </a>
+                                                    </td>
                                                 </tr>
-
                                             </tbody>
                                         </table>
                                         <div class="phantrang text-right">Nơi đặt phân trang</div>

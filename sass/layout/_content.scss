@@ -142,6 +142,7 @@ html,body{
         width: 18px;
         height: 14px;
         vertical-align: text-top;
+        margin-right: 16px;
       }
       .bread-light{
         display: none;
@@ -378,33 +379,203 @@ html,body{
   }
 }
 
-.search-field{
-  .items-field{
-    width: 182px;
-    margin-right: 10px;
+//css vùng trường tìm kiếm
+.search-field-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  .search-detail{
+    &:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .items-field{
+      width: 195px;
+      margin-right: 10px;
+      margin-bottom: 17px;
+      float: left;
+      .label-field{
+        color: #3D3D3D;
+        margin-bottom: 8px;
+      }
+      input{
+        width: 100%;
+        border: 1px solid #cecece;
+        height: 35px;
+        padding-left: 16px;
+        padding-right: 16px;
+        color: #262626;
+        border-radius: 3px;
+      }
+      select{
+        width: 100%;
+        border: 1px solid #cecece;
+        height: 35px;
+        padding-left: 16px;
+        padding-right: 16px;
+        color: #262626;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+    .zone-search{
+      margin-bottom: 17px;
+      float: left;
+      margin-top: 23px;
+      .btn-search-list{
+        background: $c-bl;
+        color: $c-wh;
+        padding: 0 42px;
+        height: 35px;
+        border: none;
+        border-radius: 3px;
+        transition: all 0.3s;
+        &:hover{
+          background: #306db9;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+  .add-items-list{
+    width: 43px;
+    height: 35px;
+    border-radius: 3px;
+    background: $c-lb;
+    border: none;
     margin-bottom: 17px;
-    .label-field{
-      color: #3D3D3D;
-      margin-bottom: 8px;
+    transition: all 0.3s;
+    position: relative;
+    &:hover{
+      background: #a3d0f7;
+      transition: all 0.3s;
     }
-    input{
-      width: 100%;
-      border: 1px solid #cecece;
-      height: 35px;
-      padding-left: 16px;
-      padding-right: 16px;
-      color: #262626;
-      border-radius: 3px;
+    &:hover:before{
+      display: block;
     }
-    select{
-      width: 100%;
-      border: 1px solid #cecece;
-      height: 35px;
-      padding-left: 16px;
-      padding-right: 16px;
-      color: #262626;
+    &:hover:after{
+      display: block;
+    }
+    &:before{
+      content: 'Thêm mới';
+      color: $c-wh;
+      background: $c-bl;
+      padding: 5px 10px;
       border-radius: 3px;
-      cursor: pointer;
+      position: absolute;
+      bottom: 41px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      display: none;
+      pointer-events: none;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-right: 5px solid transparent;
+      border-top: 5px solid #164989;
+      border-left: 5px solid transparent;
+      display: none;
+
+    }
+    img{
+      width: 16px;
+      height: 16px;
+      text-align: center;
+    }
+  }
+  .btn-render{
+    height: 35px;
+    border-radius: 3px;
+    background: $c-lb;
+    border: none;
+    margin-bottom: 17px;
+    transition: all 0.3s;
+    padding: 0 40px;
+    &:hover{
+      background: #a3d0f7;
+      transition: all 0.3s;
+    }
+    img{
+      width: 13px;
+      height: 10px;
+      margin-right: 9px;
+    }
+    span{
+      color: $c-bl;
+    }
+  }
+}
+
+//css table
+
+.table-data-wrap{
+  .tbl-data-block{
+    table.tbltype-1{
+      width: 100%;
+      margin-bottom: 19px;
+      thead{
+        tr{
+          background: $c-lb;
+          th{
+            padding: 16px 12px 16px 12px;
+            border: 1px solid #cecece;
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            padding: 18px 12px 18px 12px;
+            border: 1px solid #cecece;
+          }
+        }
+      }
+    }
+    .tbltype-2{
+      width: 100%;
+      margin-bottom: 19px;
+      thead{
+        tr{
+          th{
+            padding: 20px 9px;
+            color: $c-bl;
+            background: $c-lb;
+            border: 1px solid #cecece;
+            &.th-private{
+              padding: 9px 17px 8px;
+            }
+          }
+          .th-bl{
+            padding: 5px 13px 4px;
+            background: #D3F8FF;
+          }
+          .th-yl{
+            padding: 5px 13px 4px;
+            background: #ECF8E5;
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            padding: 19px 9px 18px;
+            border: 1px solid #cecece;
+            &.td-bl{
+              background: #E3FFFF;
+            }
+            &.td-yl{
+              background: #FCFFE5;
+            }
+          }
+
+        }
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
 // Components :: Button
 // ======================================================
 
-.btn-blue,.btn-light-blue{
+.btn-blue,.btn-light-blue,.btn-red{
   width: 147px;
   height: 33px;
   background: $c-bl;
@@ -13,15 +13,26 @@
   transition: all 0.3s;
 }
 .btn-blue{
+  transition: all 0.3s;
   &:hover{
     background: #306db9;
+    transition: all 0.3s;
   }
 }
 .btn-light-blue{
   background: #D2EAFF;
   color: $c-bl;
+  transition: all 0.3s;
   &:hover{
     background: #a3d0f7;
+    transition: all 0.3s;
+  }
+}
+.btn-red{
+  background: #912020;
+  transition: all 0.3s;
+  &:hover{
+    background: #be2d2d;
     transition: all 0.3s;
   }
 }

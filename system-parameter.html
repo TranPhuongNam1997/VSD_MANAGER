@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="libs/css/font-awesome.css">
     <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="libs/css/daterangepicker.css">
-
     <link rel="stylesheet" href="sass/main.css">
 
     <script type="text/javascript" src="libs/js/jquery-1.11.1.min.js"></script>
@@ -21,7 +20,6 @@
     <script type="text/javascript" src="libs/js/moment.min.js"></script>
     <script type="text/javascript" src="libs/js/daterangepicker.min.js"></script>
     <script type="text/javascript" src="libs/js/jquery.validate.min.js"></script>
-
     <script type="text/javascript" src="libs/js/script.js"></script>
 
 </head>
@@ -36,11 +34,11 @@
                 <nav class="navigation-vsd pull-right">
                     <ul class="menu clearfix">
                         <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="#">Quản trị hệ thống</a></li>
-                        <li><a href="issuers.html">Quản trị TCPH</a></li>
-                        <li><a href="#">Quản trị VSD</a></li>
-                        <li class="active"><a href="#">Ban lãnh đạo</a></li>
-                        <li><a href="#">Trao đổi DL với core</a></li>
+                        <li><a href="user-management.html">Quản trị hệ thống</a></li>
+                        <li class="active"><a href="issuers-list.html">Quản trị TCPH</a></li>
+                        <li><a href="report-enforcement.html">Quản trị VSD</a></li>
+                        <li><a href="list-report-issuers.html">Ban lãnh đạo</a></li>
+                        <li><a href="dataexchange-core.html">Trao đổi DL với core</a></li>
                     </ul>
                     <div class="account-vsd">
                         <div class="box-acc">
@@ -68,19 +66,13 @@
                         <span>
                             <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
                             <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
-                            <a href="#">Quản trị VSD</a>
+                            <a href="#">Quản trị hệ thống</a>
                         </span>
                         <span class="caret-right">
                             <i class="fa fa-caret-right"></i>
                         </span>
                         <span>
-                            <a href="#">Báo cáo cho TCPH</a>
-                        </span>
-                        <span class="caret-right">
-                            <i class="fa fa-caret-right"></i>
-                        </span>
-                        <span>
-                            <a href="#">Báo cáo thông tin thực hiện quyền</a>
+                            <a href="#">Tham số hệ thống</a>
                         </span>
 
                     </div>
@@ -101,30 +93,26 @@
                         </div>
                         <nav class="menu-category">
                             <ul class="menucate-lv1">
-                                <li class="active hasdrop-cate rotate-down">
-                                    <a href="#">Thông tin hồ sơ</a>
+                                <li class="hasdrop-cate">
+                                    <a href="#">Quản trị tài khoản</a>
                                     <ul class="menucate-lv2">
-                                        <li class="active-child"><a href="#">BC thông tin THQ </a></li>
-                                        <li><a href="#">BC thông tin đăng ký CK</a></li>
-                                        <li><a href="#">BC thông tin sở hữu CK</a></li>
-                                        <li><a href="#">BC thông tin lưu ký CK</a></li>
-                                        <li><a href="#">BC thông tin liên quan khác
-                                            đến TCPH</a></li>
+                                        <li class=""><a href="user-management.html">Quản lý NSD </a></li>
+                                        <li><a href="#">Quản lý nhóm NSD</a></li>
                                     </ul>
                                 </li>
                                 <li class="">
-                                    <a href="#">Công văn thu phí PLHĐ</a>
+                                    <a href="assign-expert.html">Gán chuyên viên</a>
                                 </li>
-                                <li class="">
-                                    <a href="#">Báo cáo gửi HNX</a>
+                                <li class="hasdrop-cate rotate-down">
+                                    <a href="#">Hoạt động hệ thống</a>
+                                    <ul class="menucate-lv2">
+                                        <li><a href="#">Thống kê tác động nghiệp vụ của TCPH</a></li>
+                                        <li><a href="user-operation-log.html">Thống kê tác động nghiệp vụ của VSD</a></li>
+                                    </ul>
                                 </li>
-                                <li class="">
-                                    <a href="#">Báo cáo gửi HSX</a>
+                                <li class="active">
+                                    <a href="system-parameter.html">Tham số hệ thống</a>
                                 </li>
-                                <li class="">
-                                    <a href="#">Báo cáo gửi UBCK</a>
-                                </li>
-
                             </ul>
                         </nav>
                     </div>
@@ -132,8 +120,7 @@
                     <div class="col-vsd-80">
                         <div class="zone-white-x">
                             <div class="form-data-block">
-                                <div class="title-info">Danh sách chuyên viên</div>
-
+                                <div class="title-info">Danh sách tham số hệ thống</div>
                                 <!--  begin table-->
                                 <div class="table-data-wrap">
                                     <div class="tbl-data-block">
@@ -141,10 +128,9 @@
                                             <thead>
                                             <tr>
                                                 <th class="text-center">STT</th>
-                                                <th>Tên tài khoản</th>
-                                                <th>Tên đầy đủ</th>
-                                                <th>Loại tài khoản</th>
-                                                <th>Phòng ban/ TC</th>
+                                                <th>Mã tham số</th>
+                                                <th>Giá trị tham số</th>
+                                                <th>Mô tả</th>
                                                 <th class="text-center">Chức năng</th>
                                             </tr>
 
@@ -152,64 +138,109 @@
                                             <tbody>
                                             <tr>
                                                 <td class="text-center">01</td>
-                                                <td><a href="#" class="link-main">chuyenviena</a></td>
-                                                <td>Chuyên viên</td>
-                                                <td>admin</td>
-                                                <td>Giám đốc</td>
+                                                <td>Approve</td>
+                                                <td>01</td>
+                                                <td>Tham số duyệt hoặc không duyệt hồ sơ/báo cáo</td>
                                                 <td class="text-center">
-                                                    <a href="#" class="set-item-list">
-                                                        <span><i class="fa fa-cog"></i></span>
+                                                    <a href="#" class="list-item-main">
+                                                        <span>
+                                                            <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                            <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="edit-item-list">
+                                                        <span><i class="fa fa-pencil"></i></span>
                                                     </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">01</td>
-                                                <td><a href="#" class="link-main">chuyenviena</a></td>
-                                                <td>Chuyên viên</td>
-                                                <td>admin</td>
-                                                <td>Giám đốc</td>
+                                                <td>Approve</td>
+                                                <td>01</td>
+                                                <td>Tham số duyệt hoặc không duyệt hồ sơ/báo cáo</td>
                                                 <td class="text-center">
-                                                    <a href="#" class="set-item-list">
-                                                        <span><i class="fa fa-cog"></i></span>
+                                                    <a href="#" class="list-item-main">
+                                                        <span>
+                                                            <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                            <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="edit-item-list">
+                                                        <span><i class="fa fa-pencil"></i></span>
                                                     </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">01</td>
-                                                <td><a href="#" class="link-main">chuyenviena</a></td>
-                                                <td>Chuyên viên</td>
-                                                <td>admin</td>
-                                                <td>Giám đốc</td>
+                                                <td>Approve</td>
+                                                <td>01</td>
+                                                <td>Tham số duyệt hoặc không duyệt hồ sơ/báo cáo</td>
                                                 <td class="text-center">
-                                                    <a href="#" class="set-item-list">
-                                                        <span><i class="fa fa-cog"></i></span>
+                                                    <a href="#" class="list-item-main">
+                                                        <span>
+                                                            <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                            <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="edit-item-list">
+                                                        <span><i class="fa fa-pencil"></i></span>
                                                     </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">01</td>
-                                                <td><a href="#" class="link-main">chuyenviena</a></td>
-                                                <td>Chuyên viên</td>
-                                                <td>admin</td>
-                                                <td>Giám đốc</td>
+                                                <td>Approve</td>
+                                                <td>01</td>
+                                                <td>Tham số duyệt hoặc không duyệt hồ sơ/báo cáo</td>
                                                 <td class="text-center">
-                                                    <a href="#" class="set-item-list">
-                                                        <span><i class="fa fa-cog"></i></span>
+                                                    <a href="#" class="list-item-main">
+                                                        <span>
+                                                            <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                            <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="edit-item-list">
+                                                        <span><i class="fa fa-pencil"></i></span>
                                                     </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">01</td>
-                                                <td><a href="#" class="link-main">chuyenviena</a></td>
-                                                <td>Chuyên viên</td>
-                                                <td>admin</td>
-                                                <td>Giám đốc</td>
+                                                <td>Approve</td>
+                                                <td>01</td>
+                                                <td>Tham số duyệt hoặc không duyệt hồ sơ/báo cáo</td>
                                                 <td class="text-center">
-                                                    <a href="#" class="set-item-list">
-                                                        <span><i class="fa fa-cog"></i></span>
+                                                    <a href="#" class="list-item-main">
+                                                        <span>
+                                                            <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                            <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="edit-item-list">
+                                                        <span><i class="fa fa-pencil"></i></span>
                                                     </a>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <td class="text-center">01</td>
+                                                <td>Approve</td>
+                                                <td>01</td>
+                                                <td>Tham số duyệt hoặc không duyệt hồ sơ/báo cáo</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="list-item-main">
+                                                        <span>
+                                                            <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                            <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="edit-item-list">
+                                                        <span><i class="fa fa-pencil"></i></span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+
+
 
                                             </tbody>
                                         </table>

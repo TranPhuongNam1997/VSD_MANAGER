@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/css/font-awesome.css">
     <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
-
+    <link rel="stylesheet" href="libs/css/daterangepicker.css">
     <link rel="stylesheet" href="sass/main.css">
 
     <script type="text/javascript" src="libs/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="libs/js/moment.min.js"></script>
+    <script type="text/javascript" src="libs/js/daterangepicker.min.js"></script>
     <script type="text/javascript" src="libs/js/jquery.validate.min.js"></script>
-
     <script type="text/javascript" src="libs/js/script.js"></script>
 </head>
 <body>
@@ -31,13 +32,13 @@
                 </div>
                 <nav class="navigation-vsd pull-right">
                     <ul class="menu clearfix">
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="#">Quản trị hệ thống</a></li>
-                        <li class="active"><a href="issuers.html">Quản trị TCPH</a></li>
-                        <li><a href="#">Quản trị VSD</a></li>
-                        <li><a href="#">Ban lãnh đạo</a></li>
-                        <li><a href="#">Trao đổi DL với core</a></li>
-                    </ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="user-management.html">Quản trị hệ thống</a></li>
+                    <li class="active"><a href="issuers-list.html">Quản trị TCPH</a></li>
+                    <li><a href="report-enforcement.html">Quản trị VSD</a></li>
+                    <li><a href="list-report-issuers.html">Ban lãnh đạo</a></li>
+                    <li><a href="dataexchange-core.html">Trao đổi DL với core</a></li>
+                </ul>
                     <div class="account-vsd">
                         <div class="box-acc">
                             <img src="img/icon-user-19.svg" alt="ảnh">
@@ -96,8 +97,8 @@
                         </div>
                         <nav class="menu-category">
                             <ul class="menucate-lv1">
-                                <li class="active"><a href="#">Quản trị TCPH menu</a></li>
-                                <li class="hasdrop-cate rotate-down">
+                                <li class=""><a href="issuers-list.html">Quản trị TCPH menu</a></li>
+                                <li class="active hasdrop-cate rotate-down">
                                     <a href="#">Thông tin hồ sơ</a>
                                     <ul class="menucate-lv2">
                                         <li class="active-child"><a href="http://google.com">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
@@ -109,18 +110,6 @@
                                         <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
                                     </ul>
                                 </li>
-                                <!--                               <li class="hasdrop-cate">-->
-                                <!--                                   <a href="#">Thông tin hồ sơ</a>-->
-                                <!--                                    <ul class="menucate-lv2">-->
-                                <!--                                        <li class="active"><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                    </ul>-->
-                                <!--                                </li>-->
                             </ul>
                         </nav>
                     </div>

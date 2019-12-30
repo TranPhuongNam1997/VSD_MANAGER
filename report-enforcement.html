@@ -21,6 +21,13 @@
     <script type="text/javascript" src="libs/js/daterangepicker.min.js"></script>
     <script type="text/javascript" src="libs/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="libs/js/script.js"></script>
+
+    <style>
+        .search-field-block .search-detail .items-field{
+            width: 190px;
+            margin-right: 4px;
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -34,8 +41,8 @@
                     <ul class="menu clearfix">
                         <li><a href="dashboard.html">Dashboard</a></li>
                         <li><a href="user-management.html">Quản trị hệ thống</a></li>
-                        <li class="active"><a href="issuers-list.html">Quản trị TCPH</a></li>
-                        <li><a href="report-enforcement.html">Quản trị VSD</a></li>
+                        <li><a href="issuers-list.html">Quản trị TCPH</a></li>
+                        <li class="active"><a href="report-enforcement.html">Quản trị VSD</a></li>
                         <li><a href="list-report-issuers.html">Ban lãnh đạo</a></li>
                         <li><a href="dataexchange-core.html">Trao đổi DL với core</a></li>
                     </ul>
@@ -62,23 +69,24 @@
             <div class="container">
                 <div class="breadcrumb-vsd ">
                     <div class="bread-morni">
-                            <span>
-                                <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
-                                <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
-                                <a href="#">Quản trị TCPH</a>
-                            </span>
-                        <span class="caret-right">
-                                <i class="fa fa-caret-right"></i>
-                            </span>
                         <span>
-                                <a href="#">Thông tin hồ sơ</a>
-                            </span>
+                            <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
+                            <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
+                            <a href="#">Quản trị VSD</a>
+                        </span>
                         <span class="caret-right">
-                                <i class="fa fa-caret-right"></i>
-                            </span>
+                            <i class="fa fa-caret-right"></i>
+                        </span>
                         <span>
-                                <a href="#">Hồ sơ đăng ký lần đầu</a>
-                            </span>
+                            <a href="#">Báo cáo cho TCPH</a>
+                        </span>
+                        <span class="caret-right">
+                            <i class="fa fa-caret-right"></i>
+                        </span>
+                        <span>
+                            <a href="#">Báo cáo thông tin thực hiện quyền</a>
+                        </span>
+
                     </div>
                     <div class="search">
                         <input type="text" placeholder="Tìm kiếm">
@@ -93,23 +101,34 @@
                 <div class="row-vsd">
                     <div class="col-vsd-20">
                         <div class="title-page-block">
-                            <h3 class="title-page-selected">Quản trị TCPH</h3>
+                            <h3 class="title-page-selected">Quản trị VSD</h3>
                         </div>
                         <nav class="menu-category">
                             <ul class="menucate-lv1">
-                                <li class=""><a href="issuers-list.html">Quản trị TCPH menu</a></li>
                                 <li class="active hasdrop-cate rotate-down">
                                     <a href="#">Thông tin hồ sơ</a>
                                     <ul class="menucate-lv2">
-                                        <li class="active-child"><a href="issuers-register-profile.html">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                        <li><a href="#">Hồ sơ đăng ký bổ sung <span>(3)</span></a></li>
-                                        <li><a href="#">Hủy hồ sơ đăng ký <span>(11)</span></a></li>
-                                        <li><a href="#">Hồ sơ chuyển sàn </a></li>
-                                        <li><a href="#">Hồ sơ điều chỉnh thông tin <span>(2)</span></a></li>
-                                        <li><a href="#">Hồ sơ thực hiện quyền <span>(6)</span></a></li>
-                                        <li><a href="#">Hồ sơ chuyển quyền sở hữu</a></li>
+                                        <li class="active-child"><a href="#">BC thông tin THQ </a></li>
+                                        <li><a href="#">BC thông tin đăng ký CK</a></li>
+                                        <li><a href="#">BC thông tin sở hữu CK</a></li>
+                                        <li><a href="#">BC thông tin lưu ký CK</a></li>
+                                        <li><a href="#">BC thông tin liên quan khác
+                                            đến TCPH</a></li>
                                     </ul>
                                 </li>
+                               <li class="">
+                                   <a href="#">Công văn thu phí PLHĐ</a>
+                                </li>
+                                <li class="">
+                                   <a href="#">Báo cáo gửi HNX</a>
+                                </li>
+                                <li class="">
+                                   <a href="#">Báo cáo gửi HSX</a>
+                                </li>
+                                <li class="">
+                                   <a href="#">Báo cáo gửi UBCK</a>
+                                </li>
+
                             </ul>
                         </nav>
                     </div>
@@ -117,11 +136,15 @@
                     <div class="col-vsd-80">
                         <div class="zone-white-x">
                             <div class="form-data-block">
-                                <div class="title-info">Quản trị TCPH</div>
+                                <div class="title-info">Danh sách báo cáo thực hiện quyền</div>
                                 <div class="search-field-block">
                                     <div class="search-detail">
                                         <div class="items-field">
-                                            <div class="label-field">Loại hình hồ sơ đăng ký lần đầu</div>
+                                            <div class="label-field">Tên báo cáo</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="items-field">
+                                            <div class="label-field">Mã chứng khoán</div>
                                             <select>
                                                 <option>-All</option>
                                                 <option>-All</option>
@@ -129,121 +152,85 @@
                                             </select>
                                         </div>
                                         <div class="items-field">
-                                            <div class="label-field">Tên doanh nghiệp</div>
-                                            <input type="text">
+                                            <div class="label-field">Loại báo cáo</div>
+                                            <select>
+                                                <option>-All</option>
+                                                <option>-All</option>
+                                                <option>-All</option>
+                                            </select>
                                         </div>
                                         <div class="items-field">
-                                            <div class="label-field">Tên cổ phiếu</div>
-                                            <input type="text">
+                                            <div class="label-field">Ngày tháng</div>
+                                            <input type="text" name="daterange" value="" placeholder="Từ ngày đến ngày">
                                         </div>
                                         <div class="zone-search">
                                             <button class="btn-search-list">Tìm kiếm</button>
                                         </div>
                                     </div>
-                                    <button class="btn-render">
-                                        <img src="img/icon-render.png" alt="ảnh">
-                                        <span>Kết xuất</span>
-                                    </button>
                                 </div>
 
                                 <!--  begin table-->
                                 <div class="table-data-wrap">
                                     <div class="tbl-data-block">
-                                        <table class="tbltype-2">
+                                        <table class="tbltype-1">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center" rowspan="2">STT</th>
-                                                    <th rowspan="2">Mã trái phiếu</th>
-                                                    <th rowspan="2">Mã DN</th>
-                                                    <th rowspan="2">Mệnh giá</th>
-                                                    <th rowspan="2">Loại cổ phần</th>
-                                                    <th colspan="2" class="th-private">Tổng số CP đã phát hành</th>
-                                                    <th rowspan="2">Tổng giá trị CP đã phát hành</th>
-                                                    <th rowspan="2">Chức năng</th>
-                                                </tr>
-                                                <tr>
-                                                    <th class="th-bl">CP phổ thông</th>
-                                                    <th class="th-yl">CP ưu đãi</th>
+                                                    <th class="text-center">STT</th>
+                                                    <th>Tên TCPH</th>
+                                                    <th>Mã DN</th>
+                                                    <th>Tên báo cáo</th>
+                                                    <th>Loại báo cáo</th>
+                                                    <th>Người thực hiện</th>
+                                                    <th>Ngày thực hiện</th>
                                                 </tr>
 
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>ACE</td>
-                                                    <td>ACE</td>
-                                                    <td>10.000</td>
-                                                    <td>CP phổ thông</td>
-                                                    <td class="td-bl">10.000</td>
-                                                    <td class="td-yl">5.000</td>
-                                                    <td class="text-center">100.000.000</td>
-                                                    <td class="text-center">
-                                                        <a href="issuers-detail.html" class="info-item-list">
-                                                            <span><i class="fa fa-info"></i></span>
-                                                        </a>
-                                                    </td>
+                                                    <td>Công ty cổ phần truyền thông VMG</td>
+                                                    <td>ABC</td>
+                                                    <td><a href="#" class="report-name">DTD_HNX (CP thưởng)</a></td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2019</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>ACE</td>
-                                                    <td>ACE</td>
-                                                    <td>10.000</td>
-                                                    <td>CP phổ thông</td>
-                                                    <td class="td-bl">10.000</td>
-                                                    <td class="td-yl">5.000</td>
-                                                    <td class="text-center">100.000.000</td>
-                                                    <td class="text-center">
-                                                        <a href="issuers-detail.html" class="info-item-list">
-                                                            <span><i class="fa fa-info"></i></span>
-                                                        </a>
-                                                    </td>
+                                                    <td>Công ty cổ phần truyền thông VMG</td>
+                                                    <td>ABC</td>
+                                                    <td><a href="#" class="report-name">DTD_HNX (CP thưởng)</a></td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2019</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>ACE</td>
-                                                    <td>ACE</td>
-                                                    <td>10.000</td>
-                                                    <td>CP phổ thông</td>
-                                                    <td class="td-bl">10.000</td>
-                                                    <td class="td-yl">5.000</td>
-                                                    <td class="text-center">100.000.000</td>
-                                                    <td class="text-center">
-                                                        <a href="issuers-detail.html" class="info-item-list">
-                                                            <span><i class="fa fa-info"></i></span>
-                                                        </a>
-                                                    </td>
+                                                    <td>Công ty cổ phần truyền thông VMG</td>
+                                                    <td>ABC</td>
+                                                    <td><a href="#" class="report-name">DTD_HNX (CP thưởng)</a></td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2019</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>ACE</td>
-                                                    <td>ACE</td>
-                                                    <td>10.000</td>
-                                                    <td>CP phổ thông</td>
-                                                    <td class="td-bl">10.000</td>
-                                                    <td class="td-yl">5.000</td>
-                                                    <td class="text-center">100.000.000</td>
-                                                    <td class="text-center">
-                                                        <a href="issuers-detail.html" class="info-item-list">
-                                                            <span><i class="fa fa-info"></i></span>
-                                                        </a>
-                                                    </td>
+                                                    <td>Công ty cổ phần truyền thông VMG</td>
+                                                    <td>ABC</td>
+                                                    <td><a href="#" class="report-name">DTD_HNX (CP thưởng)</a></td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2019</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>ACE</td>
-                                                    <td>ACE</td>
-                                                    <td>10.000</td>
-                                                    <td>CP phổ thông</td>
-                                                    <td class="td-bl">10.000</td>
-                                                    <td class="td-yl">5.000</td>
-                                                    <td class="text-center">100.000.000</td>
-                                                    <td class="text-center">
-                                                        <a href="issuers-detail.html" class="info-item-list">
-                                                            <span><i class="fa fa-info"></i></span>
-                                                        </a>
-                                                    </td>
+                                                    <td>Công ty cổ phần truyền thông VMG</td>
+                                                    <td>ABC</td>
+                                                    <td><a href="#" class="report-name">DTD_HNX (CP thưởng)</a></td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2019</td>
                                                 </tr>
-
 
                                             </tbody>
                                         </table>

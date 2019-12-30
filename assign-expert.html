@@ -36,9 +36,9 @@
                         <li><a href="dashboard.html">Dashboard</a></li>
                         <li><a href="user-management.html">Quản trị hệ thống</a></li>
                         <li><a href="issuers-list.html">Quản trị TCPH</a></li>
-                        <li><a href="report-enforcement.html">Quản trị VSD</a></li>
+                        <li class="active"><a href="report-enforcement.html">Quản trị VSD</a></li>
                         <li><a href="list-report-issuers.html">Ban lãnh đạo</a></li>
-                        <li class="active"><a href="dataexchange-core.html">Trao đổi DL với core</a></li>
+                        <li><a href="dataexchange-core.html">Trao đổi DL với core</a></li>
                     </ul>
                     <div class="account-vsd">
                         <div class="box-acc">
@@ -66,13 +66,13 @@
                         <span>
                             <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
                             <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
-                            <a href="#">Trao đổi dữ liệu với core</a>
+                            <a href="#">Quản trị hệ thống</a>
                         </span>
                         <span class="caret-right">
                             <i class="fa fa-caret-right"></i>
                         </span>
                         <span>
-                            <a href="#">Danh sách file trao đổi dữ liệu với core</a>
+                            <a href="#">Gán chuyên viên</a>
                         </span>
 
                     </div>
@@ -87,33 +87,40 @@
         <section class="sc-data-top">
             <div class="container">
                 <div class="row-vsd">
-                    <div class="col-vsd-12">
+                    <div class="col-vsd-20">
+                        <div class="title-page-block">
+                            <h3 class="title-page-selected">Quản trị VSD</h3>
+                        </div>
+                        <nav class="menu-category">
+                            <ul class="menucate-lv1">
+                                <li class="hasdrop-cate rotate-down">
+                                    <a href="#">Quản trị tài khoản</a>
+                                    <ul class="menucate-lv2">
+                                        <li class=""><a href="user-management.html">Quản lý NSD </a></li>
+                                        <li><a href="#">Quản lý nhóm NSD</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="assign-expert.html">Gán chuyên viên</a>
+                                </li>
+                                <li class="hasdrop-cate">
+                                    <a href="#">Hoạt động hệ thống</a>
+                                    <ul class="menucate-lv2">
+                                        <li><a href="#">Thống kê tác động nghiệp vụ của TCPH</a></li>
+                                        <li><a href="user-operation-log.html">Thống kê tác động nghiệp vụ của VSD</a></li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="system-parameter.html">Tham số hệ thống</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--end col-vsd-20-->
+                    <div class="col-vsd-80">
                         <div class="zone-white-x">
                             <div class="form-data-block">
-                                <div class="title-info">Danh sách file trao đổi dữ liệu với core</div>
-                                <div class="search-field-block">
-                                    <div class="search-detail">
-                                        <div class="items-field">
-                                            <div class="label-field">Tên file</div>
-                                            <input type="text">
-                                        </div>
-                                        <div class="items-field">
-                                            <div class="label-field">Loại file</div>
-                                            <select>
-                                                <option>-All</option>
-                                                <option>-All</option>
-                                                <option>-All</option>
-                                            </select>
-                                        </div>
-                                        <div class="items-field">
-                                            <div class="label-field">Ngày thực hiện</div>
-                                            <input type="text" name="daterange" value="" placeholder="Từ ngày đến ngày">
-                                        </div>
-                                        <div class="zone-search">
-                                            <button class="btn-search-list">Tìm kiếm</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="title-info">Danh sách chuyên viên</div>
 
                                 <!--  begin table-->
                                 <div class="table-data-wrap">
@@ -122,99 +129,75 @@
                                             <thead>
                                             <tr>
                                                 <th class="text-center">STT</th>
-                                                <th>Tên file</th>
-                                                <th>loại file</th>
-                                                <th>Người thực hiện</th>
-                                                <th>Ngày thực hiện</th>
+                                                <th>Tên tài khoản</th>
+                                                <th>Tên đầy đủ</th>
+                                                <th>Loại tài khoản</th>
+                                                <th>Phòng ban/ TC</th>
                                                 <th class="text-center">Chức năng</th>
                                             </tr>
 
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td class="text-center">01</td>
-                                                    <td>
-                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
-                                                    </td>
-                                                    <td>Báo cáo THQ</td>
-                                                    <td>Admin</td>
-                                                    <td>22/12/2020</td>
-                                                    <td class="text-center">
-                                                        <a href="#" class="download-item-list">
-                                                            <span><i class="fa fa-download"></i></span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">01</td>
-                                                    <td>
-                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
-                                                    </td>
-                                                    <td>Báo cáo THQ</td>
-                                                    <td>Admin</td>
-                                                    <td>22/12/2020</td>
-                                                    <td class="text-center">
-                                                        <a href="#" class="download-item-list">
-                                                            <span><i class="fa fa-download"></i></span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">01</td>
-                                                    <td>
-                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
-                                                    </td>
-                                                    <td>Báo cáo THQ</td>
-                                                    <td>Admin</td>
-                                                    <td>22/12/2020</td>
-                                                    <td class="text-center">
-                                                        <a href="#" class="download-item-list">
-                                                            <span><i class="fa fa-download"></i></span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">01</td>
-                                                    <td>
-                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
-                                                    </td>
-                                                    <td>Báo cáo THQ</td>
-                                                    <td>Admin</td>
-                                                    <td>22/12/2020</td>
-                                                    <td class="text-center">
-                                                        <a href="#" class="download-item-list">
-                                                            <span><i class="fa fa-download"></i></span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">01</td>
-                                                    <td>
-                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
-                                                    </td>
-                                                    <td>Báo cáo THQ</td>
-                                                    <td>Admin</td>
-                                                    <td>22/12/2020</td>
-                                                    <td class="text-center">
-                                                        <a href="#" class="download-item-list">
-                                                            <span><i class="fa fa-download"></i></span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">01</td>
-                                                    <td>
-                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
-                                                    </td>
-                                                    <td>Báo cáo THQ</td>
-                                                    <td>Admin</td>
-                                                    <td>22/12/2020</td>
-                                                    <td class="text-center">
-                                                        <a href="#" class="download-item-list">
-                                                            <span><i class="fa fa-download"></i></span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                            <tr>
+                                                <td class="text-center">01</td>
+                                                <td><a href="#" class="link-main">chuyenviena</a></td>
+                                                <td>Chuyên viên</td>
+                                                <td>admin</td>
+                                                <td>Giám đốc</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="set-item-list">
+                                                        <span><i class="fa fa-cog"></i></span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">01</td>
+                                                <td><a href="#" class="link-main">chuyenviena</a></td>
+                                                <td>Chuyên viên</td>
+                                                <td>admin</td>
+                                                <td>Giám đốc</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="set-item-list">
+                                                        <span><i class="fa fa-cog"></i></span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">01</td>
+                                                <td><a href="#" class="link-main">chuyenviena</a></td>
+                                                <td>Chuyên viên</td>
+                                                <td>admin</td>
+                                                <td>Giám đốc</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="set-item-list">
+                                                        <span><i class="fa fa-cog"></i></span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">01</td>
+                                                <td><a href="#" class="link-main">chuyenviena</a></td>
+                                                <td>Chuyên viên</td>
+                                                <td>admin</td>
+                                                <td>Giám đốc</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="set-item-list">
+                                                        <span><i class="fa fa-cog"></i></span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">01</td>
+                                                <td><a href="#" class="link-main">chuyenviena</a></td>
+                                                <td>Chuyên viên</td>
+                                                <td>admin</td>
+                                                <td>Giám đốc</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="set-item-list">
+                                                        <span><i class="fa fa-cog"></i></span>
+                                                    </a>
+                                                </td>
+                                            </tr>
 
                                             </tbody>
                                         </table>

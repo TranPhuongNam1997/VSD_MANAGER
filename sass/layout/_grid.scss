@@ -75,6 +75,7 @@
   flex: 0 0 20%;
   max-width: 20%;
   position: relative;
+  transition: all 0.3s;
 }
 .col-vsd-80{
   padding: 0 6px;
@@ -83,12 +84,14 @@
   max-width: 80%;
   position: relative;
 }
+
 .col-vsd-60{
   padding: 0 6px;
   -ms-flex: 0 0 60%;
   flex: 0 0 60%;
   max-width: 60%;
   position: relative;
+  transition: all 0.3s;
 }
 .col-vsd-35{
   padding: 0 6px;

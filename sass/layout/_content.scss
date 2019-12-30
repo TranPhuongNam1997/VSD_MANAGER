@@ -494,7 +494,7 @@ html,body{
     border-radius: 3px;
     background: $c-lb;
     border: none;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
     transition: all 0.3s;
     padding: 0 40px;
     &:hover{
@@ -511,12 +511,17 @@ html,body{
     }
   }
 }
+input[name="daterange"]{
+  background: #fff url(../img/icon-cacular.svg) no-repeat;
+  background-position: center right 12px;
+  cursor: pointer;
+}
 
 //css table
 
 .table-data-wrap{
   .tbl-data-block{
-    table.tbltype-1{
+    .tbltype-1{
       width: 100%;
       margin-bottom: 19px;
       thead{
@@ -525,6 +530,7 @@ html,body{
           th{
             padding: 16px 12px 16px 12px;
             border: 1px solid #cecece;
+            color: $c-bl;
           }
         }
       }
@@ -577,6 +583,21 @@ html,body{
         }
       }
     }
+    .report-name{
+      color: $c-bl;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    .link-main{
+      color: $c-bl;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
   }
 }
 
@@ -653,8 +674,8 @@ html,body{
       display: none;
     }
     .reason-refuse{
-      color: #fff;
-      background: #164989;
+      color: #3D3D3D;
+      background: rgb(255, 220, 220);
       padding: 5px 10px;
       border-radius: 3px;
       position: absolute;
@@ -664,6 +685,7 @@ html,body{
       white-space: nowrap;
       display: none;
       pointer-events: none;
+      box-shadow: -1px 10px 15px 0px rgba(13, 0, 0, 0.2);
       &:after{
         content: '';
         position: absolute;
@@ -671,7 +693,7 @@ html,body{
         left: 50%;
         transform: translateX(-50%);
         border-right: 5px solid transparent;
-        border-top: 5px solid #164989;
+        border-top: 5px solid rgb(255, 220, 220);
         border-left: 5px solid transparent;
       }
     }
@@ -711,6 +733,10 @@ html,body{
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      &:hover{
+        background: $c-lb;
+        color: $c-bl;
+      }
     }
     .info-different{
       display: flex;

@@ -11,15 +11,19 @@
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/css/font-awesome.css">
     <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="libs/css/daterangepicker.css">
 
     <link rel="stylesheet" href="sass/main.css">
 
     <script type="text/javascript" src="libs/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="libs/js/moment.min.js"></script>
+    <script type="text/javascript" src="libs/js/daterangepicker.min.js"></script>
     <script type="text/javascript" src="libs/js/jquery.validate.min.js"></script>
 
     <script type="text/javascript" src="libs/js/script.js"></script>
+
 </head>
 <body>
 <div class="wrapper">
@@ -33,9 +37,9 @@
                     <ul class="menu clearfix">
                         <li><a href="dashboard.html">Dashboard</a></li>
                         <li><a href="#">Quản trị hệ thống</a></li>
-                        <li class="active"><a href="issuers.html">Quản trị TCPH</a></li>
+                        <li><a href="issuers.html">Quản trị TCPH</a></li>
                         <li><a href="#">Quản trị VSD</a></li>
-                        <li><a href="#">Ban lãnh đạo</a></li>
+                        <li class="active"><a href="#">Ban lãnh đạo</a></li>
                         <li><a href="#">Trao đổi DL với core</a></li>
                     </ul>
                     <div class="account-vsd">
@@ -64,13 +68,13 @@
                         <span>
                             <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
                             <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
-                            <a href="#">Quản trị TCPH</a>
+                            <a href="#">Trao đổi dữ liệu với core</a>
                         </span>
                         <span class="caret-right">
                             <i class="fa fa-caret-right"></i>
                         </span>
                         <span>
-                            <a href="#">Quản trị TCPH</a>
+                            <a href="#">Danh sách file trao đổi dữ liệu với core</a>
                         </span>
 
                     </div>
@@ -85,53 +89,18 @@
         <section class="sc-data-top">
             <div class="container">
                 <div class="row-vsd">
-                    <div class="col-vsd-20">
-                        <div class="title-page-block">
-                            <h3 class="title-page-selected">Quản trị TCPH</h3>
-                        </div>
-                        <nav class="menu-category">
-                            <ul class="menucate-lv1">
-                                <li class="active"><a href="#">Quản trị TCPH menu</a></li>
-                                <li class="hasdrop-cate rotate-down">
-                                    <a href="#">Thông tin hồ sơ</a>
-                                    <ul class="menucate-lv2">
-                                        <li><a href="issuers-register-profile.html">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                    </ul>
-                                </li>
-                                <!--                               <li class="hasdrop-cate">-->
-                                <!--                                   <a href="#">Thông tin hồ sơ</a>-->
-                                <!--                                    <ul class="menucate-lv2">-->
-                                <!--                                        <li class="active"><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
-                                <!--                                    </ul>-->
-                                <!--                                </li>-->
-                            </ul>
-                        </nav>
-                    </div>
-                    <!--end col-vsd-20-->
-                    <div class="col-vsd-80">
+                    <div class="col-vsd-12">
                         <div class="zone-white-x">
                             <div class="form-data-block">
-                                <div class="title-info">Quản trị TCPH</div>
+                                <div class="title-info">Danh sách file trao đổi dữ liệu với core</div>
                                 <div class="search-field-block">
                                     <div class="search-detail">
                                         <div class="items-field">
-                                            <div class="label-field">Tên doanh nghiệp</div>
+                                            <div class="label-field">Tên file</div>
                                             <input type="text">
                                         </div>
                                         <div class="items-field">
-                                            <div class="label-field">Loại hình doanh nghiệp</div>
+                                            <div class="label-field">Loại file</div>
                                             <select>
                                                 <option>-All</option>
                                                 <option>-All</option>
@@ -139,20 +108,13 @@
                                             </select>
                                         </div>
                                         <div class="items-field">
-                                            <div class="label-field">Trong nước/nước ngoài</div>
-                                            <select>
-                                                <option>-All</option>
-                                                <option>-All</option>
-                                                <option>-All</option>
-                                            </select>
+                                            <div class="label-field">Ngày thực hiện</div>
+                                            <input type="text" name="daterange" value="" placeholder="Từ ngày đến ngày">
                                         </div>
                                         <div class="zone-search">
                                             <button class="btn-search-list">Tìm kiếm</button>
                                         </div>
                                     </div>
-                                    <button class="add-items-list">
-                                        <img src="img/icon-add.png" alt="ảnh">
-                                    </button>
                                 </div>
 
                                 <!--  begin table-->
@@ -160,64 +122,100 @@
                                     <div class="tbl-data-block">
                                         <table class="tbltype-1">
                                             <thead>
-                                                <tr>
-                                                    <th class="text-center">STT</th>
-                                                    <th>Tên doanh nghiệp</th>
-                                                    <th>Mã DN</th>
-                                                    <th>Tên viết tắt</th>
-                                                    <th>Địa chỉ trụ sở chính</th>
-                                                    <th>Loại hình DN</th>
-                                                </tr>
+                                            <tr>
+                                                <th class="text-center">STT</th>
+                                                <th>Tên file</th>
+                                                <th>loại file</th>
+                                                <th>Người thực hiện</th>
+                                                <th>Ngày thực hiện</th>
+                                                <th class="text-center">Chức năng</th>
+                                            </tr>
 
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
-                                                    <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>
+                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
+                                                    </td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2020</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="download-item-list">
+                                                            <span><i class="fa fa-download"></i></span>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
-                                                    <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>
+                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
+                                                    </td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2020</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="download-item-list">
+                                                            <span><i class="fa fa-download"></i></span>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
-                                                    <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>
+                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
+                                                    </td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2020</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="download-item-list">
+                                                            <span><i class="fa fa-download"></i></span>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
-                                                    <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>
+                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
+                                                    </td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2020</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="download-item-list">
+                                                            <span><i class="fa fa-download"></i></span>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
-                                                    <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>
+                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
+                                                    </td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2020</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="download-item-list">
+                                                            <span><i class="fa fa-download"></i></span>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">01</td>
-                                                    <td>Công ty cổ phần Bê tông Ly tâm </td>
-                                                    <td>ACE</td>
-                                                    <td>ACECO</td>
-                                                    <td>Quốc lộ 91, Phường Mỹ thới, Tp, Long Xuyên, Tỉnh An Giang</td>
-                                                    <td>Công ty</td>
+                                                    <td>
+                                                        <a href="#" class="link-main">Danh sách file trao đổi dữ liệu với core  trao đổi dữ liệu với core</a>
+                                                    </td>
+                                                    <td>Báo cáo THQ</td>
+                                                    <td>Admin</td>
+                                                    <td>22/12/2020</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="download-item-list">
+                                                            <span><i class="fa fa-download"></i></span>
+                                                        </a>
+                                                    </td>
                                                 </tr>
 
                                             </tbody>

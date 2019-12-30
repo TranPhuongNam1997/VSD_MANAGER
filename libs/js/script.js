@@ -30,6 +30,15 @@ $( document ).ready(function() {
         }
     });
 
+    //js nut bars
+    $('.bars-close').click(function () {
+        $('.width-resize').toggleClass('change-width');
+        $('.col-vsd-60').toggleClass('change-width');
+    });
+    $('.bars-close').hover(function () {
+        $('.heading-diary').toggleClass('change-color');
+    });
+
     // custom datepicker
 
     jQuery('.datepicker-vsd').datetimepicker({
@@ -41,6 +50,12 @@ $( document ).ready(function() {
     });
     $.datetimepicker.setLocale('vi');
 
+    $('input[name="daterange"]').daterangepicker({
+        opens: 'left',
+        "autoApply": true
+    }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
     //checkvalidate
     $(".form-check-validate").validate(
         {
@@ -126,7 +141,6 @@ $(function() {
     // }, function(start, end, label) {
     //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
     // });
-
 
 
 });

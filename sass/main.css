@@ -684,11 +684,29 @@ input.error {
   padding-right: 0 !important; }
   .modal.modal-vsd .size-modal {
     max-width: 620px;
+    width: 100%;
     margin: auto;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  .modal.modal-vsd .size-modal-word {
+    max-width: 679px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.size-modal-big {
+  max-width: 923px;
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .mdl-header {
   padding: 14px 21px;
@@ -716,7 +734,8 @@ input.error {
     border-radius: 4px; }
 
 .mdl-footer {
-  padding: 10px 18px 22px; }
+  padding: 10px 18px 22px;
+  text-align: right; }
   .mdl-footer .form-send-feedback {
     text-align: right; }
     .mdl-footer .form-send-feedback input {
@@ -737,17 +756,92 @@ input.error {
       .mdl-footer .form-send-feedback input::placeholder {
         font-style: italic;
         color: #768289; }
-    .mdl-footer .form-send-feedback .btn-send-feedback {
-      background: #CC281B;
-      color: #fff;
-      padding: 0 32px;
-      height: 35px;
-      border: none;
-      border-radius: 3px;
-      transition: all 0.3s; }
-      .mdl-footer .form-send-feedback .btn-send-feedback:hover {
-        background: #912020;
-        transition: all 0.3s; }
+
+.btn-send-feedback {
+  background: #CC281B;
+  color: #fff;
+  width: 147px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s;
+  margin-left: 7px; }
+  .btn-send-feedback:hover {
+    background: #912020;
+    transition: all 0.3s; }
+
+.btn-accept-vsd {
+  background: #12841A;
+  color: #fff;
+  width: 147px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s;
+  margin-left: 7px; }
+  .btn-accept-vsd:hover {
+    background: #2a6f2e;
+    transition: all 0.3s; }
+
+.group-field-popup {
+  margin-bottom: 15px; }
+  .group-field-popup .row-vsd .field-input-popup {
+    width: 100%;
+    border: 1px solid #cecece;
+    height: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #262626;
+    border-radius: 3px; }
+  .group-field-popup .row-vsd .area-field-popup {
+    width: 100%;
+    border: 1px solid #cecece;
+    height: 85px;
+    padding: 5px 16px;
+    color: #262626;
+    border-radius: 3px; }
+  .group-field-popup .row-vsd .typebr-input-popup {
+    width: 100%;
+    padding: 10px 16px;
+    color: #262626;
+    border-bottom: 1px solid #cecece; }
+  .group-field-popup .name-field-popup {
+    color: #606060;
+    display: block;
+    padding-top: 11px; }
+
+.assigned-word-block .txt-assigned {
+  font-size: 14px;
+  color: #164989;
+  font-weight: 700;
+  margin-bottom: 10px; }
+.assigned-word-block .word-block {
+  background: #F3F6F8;
+  border-radius: 3px;
+  padding: 13px 13px 0;
+  margin-bottom: 17px; }
+  .assigned-word-block .word-block .item-word {
+    width: 53px;
+    height: 53px;
+    text-align: center;
+    line-height: 53px;
+    color: #164989;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #cfdbea4d;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 12px;
+    margin-bottom: 23px; }
+  .assigned-word-block .word-block .item-word.active {
+    background: #164989;
+    color: #fff; }
+
+.select-pro-stock .txt-pro-stock {
+  color: #164989;
+  font-size: 14px;
+  margin-bottom: 13px; }
 
 .txt-approved {
   color: #00940F; }
@@ -861,6 +955,28 @@ input.error {
   flex: 0 0 65%;
   max-width: 65%;
   position: relative; }
+
+.col-vsd-30 {
+  padding: 0 6px;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+  position: relative; }
+
+.col-vsd-70 {
+  padding: 0 6px;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%;
+  position: relative; }
+
+.row-pc {
+  margin: 0 -15px; }
+
+.col-pc-50 {
+  padding: 0 15px;
+  float: left;
+  width: 50%; }
 
 .title-input {
   max-width: 175px;
@@ -1249,7 +1365,7 @@ html, body {
     padding: 11px 25px;
     border-bottom: 1px solid #dedede; }
     .zone-white .items-handling .name-handling {
-      color: #A37400;
+      color: #d59800;
       margin-bottom: 10px;
       display: block; }
       .zone-white .items-handling .name-handling:hover {
@@ -1257,11 +1373,11 @@ html, body {
     .zone-white .items-handling.profile-accepted {
       background: #EDF5F8; }
       .zone-white .items-handling.profile-accepted .name-handling {
-        color: #319925; }
+        color: #11a800; }
     .zone-white .items-handling.profile-rejection {
       background: #EDF5F8; }
       .zone-white .items-handling.profile-rejection .name-handling {
-        color: #912020; }
+        color: #da1818; }
     .zone-white .items-handling .received-editlast li {
       display: inline-block;
       margin-right: 45px;
@@ -1295,6 +1411,8 @@ html, body {
   .taskremind-block .txt-taskremind {
     color: #232323;
     margin-right: 29px; }
+    .taskremind-block .txt-taskremind.space-50 {
+      margin-left: 50px; }
   .taskremind-block .ip-remind {
     width: 350px;
     height: 35px;
@@ -1314,7 +1432,7 @@ html, body {
   .taskremind-block .btn-add {
     margin-right: 50px; }
   .taskremind-block .datetimepicker-vsd {
-    width: 300px;
+    width: 171px;
     height: 35px;
     border: 1px solid #E8E8E8;
     margin-right: 13px;
@@ -1473,10 +1591,10 @@ input[name="daterange"] {
       padding: 9px 17px 8px; }
   .table-data-wrap .tbl-data-block .tbltype-2 thead tr .th-bl {
     padding: 5px 13px 4px;
-    background: #D3F8FF; }
+    font-size: 11px; }
   .table-data-wrap .tbl-data-block .tbltype-2 thead tr .th-yl {
     padding: 5px 13px 4px;
-    background: #ECF8E5; }
+    font-size: 11px; }
   .table-data-wrap .tbl-data-block .tbltype-2 tbody tr td {
     padding: 19px 9px 18px;
     border: 1px solid #cecece; }
@@ -1501,9 +1619,8 @@ input[name="daterange"] {
 .field-box {
   margin: 0 -3px;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  height: 100%; }
+  align-items: center;
+  justify-content: space-between; }
   .field-box:after {
     content: '';
     display: table;

@@ -39,6 +39,12 @@ $( document ).ready(function() {
         $('.heading-diary').toggleClass('change-color');
     });
 
+
+    // js nut thay đổi trạng thái của từ popup
+    $('.item-word').click(function () {
+       $(this).toggleClass('active');
+    });
+
     // custom datepicker
 
     jQuery('.datepicker-vsd').datetimepicker({

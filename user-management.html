@@ -153,7 +153,7 @@
                                             <button class="btn-search-list">Tìm kiếm</button>
                                         </div>
                                     </div>
-                                    <button class="add-items-list">
+                                    <button type="button" class="add-items-list" data-toggle="modal" data-target="#reason-rejection">
                                         <img src="img/icon-add.png" alt="ảnh">
                                     </button>
                                 </div>
@@ -400,6 +400,161 @@
         </div>
     </div>
     <a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <!--popup-view-->
+
+    <div class="modal modal-vsd" id="reason-rejection">
+        <div class="size-modal-big">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="mdl-header">
+                    <h3 class="heading-popup">Thêm mới người sử dụng</h3>
+                    <div class="btn-close"><img src="img/icon-mdl-close-19.svg" alt="ảnh" data-dismiss="modal"></div>
+                </div>
+
+                <!-- Modal body -->
+                <div class="mdl-main">
+                    <div class="row-pc clearfix">
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Tài khoản</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Tên đầy đủ</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Mật khẩu</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Ngày sinh</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Nhắc lại mật khẩu</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">CMT căn cước</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Loại tài khoản</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Ngày cấp</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Phòng ban/ TC</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Nơi cấp</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Trạng thái</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Ghi chú</span></div>
+                                    <div class="col-vsd-70">
+                                        <input type="text" class="field-input-popup">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-pc-50">
+                            <div class="group-field-popup">
+                                <div class="row-vsd">
+                                    <div class="col-vsd-30"><span class="name-field-popup">Địa chỉ</span></div>
+                                    <div class="col-vsd-70">
+                                        <textarea class="area-field-popup"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="mdl-footer">
+                    <button type="button" class="btn-light-blue" data-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn-blue">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

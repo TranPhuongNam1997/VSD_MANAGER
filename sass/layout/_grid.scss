@@ -107,6 +107,29 @@
   max-width: 65%;
   position: relative;
 }
+.col-vsd-30{
+  padding: 0 6px;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+  position: relative;
+}
+.col-vsd-70{
+  padding: 0 6px;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%;
+  position: relative;
+}
+.row-pc{
+  margin: 0 -15px;
+}
+.col-pc-50{
+  padding: 0 15px;
+  float: left;
+  width: 50%;
+}
+
 .title-input{
   //padding: 0 6px;
   //-ms-flex: 0 0 35%;

@@ -254,7 +254,7 @@ html,body{
     border-bottom: 1px solid #dedede;
 
     .name-handling{
-      color: #A37400;
+      color: #d59800;
       margin-bottom: 10px;
       display: block;
       &:hover{
@@ -264,13 +264,13 @@ html,body{
     &.profile-accepted{
       background: #EDF5F8;
       .name-handling{
-        color: $c-gr;
+        color: #11a800;
       }
     }
     &.profile-rejection{
       background: #EDF5F8;
       .name-handling{
-        color: #912020;
+        color: #da1818;
       }
     }
 
@@ -322,6 +322,10 @@ html,body{
   .txt-taskremind{
     color: #232323;
     margin-right: 29px;
+    &.space-50{
+      margin-left: 50px;
+    }
+
   }
   .ip-remind{
     width: 350px;
@@ -347,7 +351,7 @@ html,body{
     margin-right: 50px;
   }
   .datetimepicker-vsd{
-    width: 300px;
+    width: 171px;
     height: 35px;
     border: 1px solid #E8E8E8;
     margin-right: 13px;
@@ -559,11 +563,11 @@ input[name="daterange"]{
           }
           .th-bl{
             padding: 5px 13px 4px;
-            background: #D3F8FF;
+            font-size: 11px;
           }
           .th-yl{
             padding: 5px 13px 4px;
-            background: #ECF8E5;
+            font-size: 11px;
           }
         }
       }
@@ -609,9 +613,9 @@ input[name="daterange"]{
 .field-box{
   margin: 0 -3px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  height: 100%;
+  //height: 100%;
   &:after{
     content: '';
     display: table;

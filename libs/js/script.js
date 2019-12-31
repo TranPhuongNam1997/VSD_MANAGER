@@ -45,6 +45,25 @@ $( document ).ready(function() {
        $(this).toggleClass('active');
     });
 
+
+    // $('.btn-selectall input').click(function () {
+    //     $('.btn-selectchild input').prop('checked', this.checked);
+    // });
+    // $('.btn-selectchild input').change(function () {
+    //     var check = ($('.btn-selectchild input').filter(":checked").length == $('.btn-selectchild input').length);
+    //     $('.btn-selectall input').prop("checked", check);
+    // });
+
+    $('.btn-selectall').click(function () {
+        $('.btn-general input').toggle('checked','checked');
+        $('.btn-general').toggleClass('active');
+        $('.btn-selectchild input').prop('checked', this.checked);
+    });
+    $('.btn-selectchild input').change(function () {
+        var check = ($('.btn-selectchild input').filter(":checked").length == $('.btn-selectchild input').length);
+        $('.btn-selectall input').prop("checked", check);
+    });
+
     // custom datepicker
 
     jQuery('.datepicker-vsd').datetimepicker({

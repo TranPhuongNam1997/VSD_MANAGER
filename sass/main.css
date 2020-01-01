@@ -709,7 +709,7 @@ input.error {
   transform: translate(-50%, -50%); }
 
 .mdl-header {
-  padding: 14px 21px;
+  padding: 9px 21px;
   background: #164989;
   display: flex;
   align-items: center;
@@ -721,7 +721,7 @@ input.error {
     margin-bottom: 0; }
   .mdl-header .btn-close {
     cursor: pointer;
-    padding: 0 8px; }
+    padding: 5px 8px; }
     .mdl-header .btn-close img {
       width: 8px;
       height: 8px; }

@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="icon" href="img/facvicon.png" />
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
+    <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
+
+    <link rel="stylesheet" href="sass/main.css">
+
+    <script type="text/javascript" src="libs/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="libs/js/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="libs/js/script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header-top clearfix">
+                <div class="logo pull-left">
+                    <h1><a href="#"><img class="w-100" src="img/logo-vsd-19.svg" alt="ảnh"></a></h1>
+                </div>
+                <nav class="navigation-vsd pull-right">
+                    <ul class="menu clearfix">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="#">Quản trị hệ thống</a></li>
+                        <li class="active"><a href="issuers.html">Quản trị TCPH</a></li>
+                        <li><a href="#">Quản trị VSD</a></li>
+                        <li><a href="#">Ban lãnh đạo</a></li>
+                        <li><a href="#">Trao đổi DL với core</a></li>
+                    </ul>
+                    <div class="account-vsd">
+                        <div class="box-acc">
+                            <img src="img/icon-user-19.svg" alt="ảnh">
+                            <span class="name-admin">lutuananh1994</span>
+                            <i class="fa fa-sort-down"></i>
+                            <div class="box-change-logout">
+                                <ul>
+                                    <li><a href="index.html">Đăng xuất</a></li>
+                                    <li><a href="#">Đổi mật khẩu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
+        <div class="breadcrumb-block">
+            <div class="container">
+                <div class="breadcrumb-vsd ">
+                    <div class="bread-morni">
+                            <span>
+                                <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
+                                <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
+                                <a href="#">Quản trị TCPH</a>
+                            </span>
+                            <span class="caret-right">
+                                <i class="fa fa-caret-right"></i>
+                            </span>
+                            <span>
+                                <a href="#">Thông tin hồ sơ</a>
+                            </span>
+                            <span class="caret-right">
+                                <i class="fa fa-caret-right"></i>
+                            </span>
+                            <span>
+                                <a href="#">Hồ sơ đăng ký lần đầu</a>
+                            </span>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <button type="button"><img src="img/icon-search-19.svg" alt="ảnh"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <section class="sc-data-top">
+            <div class="container">
+                <div class="row-vsd">
+                    <div class="col-vsd-20">
+                        <div class="title-page-block">
+                            <h3 class="title-page-selected">Quản trị TCPH</h3>
+                        </div>
+                        <nav class="menu-category">
+                            <ul class="menucate-lv1">
+                                <li class="active"><a href="#">Quản trị TCPH menu</a></li>
+                                <li class="hasdrop-cate rotate-down">
+                                    <a href="#">Thông tin hồ sơ</a>
+                                    <ul class="menucate-lv2">
+                                        <li class="active-child"><a href="http://google.com">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
+                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
+                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
+                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
+                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
+                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
+                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
+                                    </ul>
+                                </li>
+<!--                               <li class="hasdrop-cate">-->
+<!--                                   <a href="#">Thông tin hồ sơ</a>-->
+<!--                                    <ul class="menucate-lv2">-->
+<!--                                        <li class="active"><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
+<!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
+<!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
+<!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
+<!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
+<!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
+<!--                                        <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-vsd-80">
+                        <div class="zone-white-x">
+                            <form class="form-check-validate">
+                                <div class="form-data-block">
+                                    <div class="title-info">Thêm mới thông tin tổ chức phát hành</div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Tên TCPH</div>
+                                                    <div class="input-enter">
+                                                        <input type="text" required name="tentcph">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Tên tiếng anh</div>
+                                                    <div class="input-enter">
+                                                        <input type="text" name="tentienganh">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Tên rút gọn</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Mã doanh nghiệp</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Loại hình doanh nghiệp</div>
+                                                    <div class="input-enter">
+                                                        <select class="items-select">
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Mã chứng khoán</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Ngôn ngữ</div>
+                                                    <div class="input-enter">
+                                                        <select class="items-select">
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Loại doanh nghiệp</div>
+                                                    <div class="input-enter">
+                                                        <select class="items-select">
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-data-block">
+                                    <div class="title-info title-small">Thông tin liên hệ</div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Số điện thoại</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Fax</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Đia chỉ Email</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Website</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Đia chỉ</div>
+                                                    <div class="input-enter">
+                                                        <textarea></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-data-block">
+                                    <div class="title-info title-small">Thông tin giao dịch</div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Số tài khoản thanh toán <span>(*)</span></div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Số giấy CN đăng ký DN</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Nơi mở tài khoản</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Ngày cấp</div>
+                                                    <div class="input-enter">
+                                                        <input type="text" name="datenormal" class='datepicker-vsd' autocomplete="off" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Nghành nghề KD</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Nơi cấp</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Ngành nghề (Khác)</div>
+                                                    <div class="input-enter">
+                                                        <input type="text" disabled="disabled">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Số giấy CN đăng ký KD</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Ngày bắt đầu giao dịch</div>
+                                                    <div class="input-enter">
+                                                        <input type="text" name="datenormal" class='datepicker-vsd' autocomplete="off" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Ngày cấp</div>
+                                                    <div class="input-enter">
+                                                        <input type="text" name="datenormal" class='datepicker-vsd' autocomplete="off" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Vốn điều lệ</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Nơi cấp</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Vốn điều lệ thực góp</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Giấy phép khác</div>
+                                                    <div class="input-enter">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Vị trí doanh nghiệp</div>
+                                                    <div class="input-enter">
+                                                        <select class="items-select">
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                            <option>Công ty đại chúng</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Ngày cấp</div>
+                                                    <div class="input-enter">
+                                                        <input type="text" name="datenormal" class='datepicker-vsd' autocomplete="off" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="formgroup-vsd">
+                                                <div class="row-form">
+                                                    <div class="title-input">Nơi cấp</div>
+                                                    <div class="input-enter">
+                                                        <input type="text" name="noicap">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="utiliti-handling">
+                                    <button type="button" class="btn-light-blue">Làm mới</button>
+                                    <button type="button" class="btn-blue">Lưu tạm</button>
+                                    <button type="submit" class="btn-blue">Gửi duyệt</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="push"></div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row-foot">
+            <div class="col-lg-2">
+                <h4 class="logo-bot">
+                    <a href="#"><img src="img/logo-foot-19.svg" alt="ảnh"></a>
+                </h4>
+            </div>
+            <div class="col-lg-6">
+                <div class="title-foot">Trụ sở chính</div>
+                <span class="contact">
+                            <svg id="Layer_1" width="7" height="10" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.41 10.43"><title>icon-map</title><path d="M1.09,1.07A3.61,3.61,0,0,1,3.71,0,3.6,3.6,0,0,1,6.32,1.07,3.48,3.48,0,0,1,7.41,3.65a6.4,6.4,0,0,1-.92,2.91,16.55,16.55,0,0,1-1.86,2.8l-.92,1.07A5.53,5.53,0,0,1,3.3,10c-.16-.19-.46-.57-.88-1.13s-.8-1.1-1.12-1.62a11.61,11.61,0,0,1-.89-1.8A4.58,4.58,0,0,1,0,3.65,3.48,3.48,0,0,1,1.09,1.07Zm1.68,3.5A1.26,1.26,0,0,0,3.71,5a1.24,1.24,0,0,0,.93-.39A1.23,1.23,0,0,0,5,3.65a1.31,1.31,0,0,0-1.32-1.3,1.29,1.29,0,0,0-.94.38,1.25,1.25,0,0,0-.38.92A1.22,1.22,0,0,0,2.77,4.57Z"/></svg>
+                            Số 112 đường Hoàng Quốc Việt, phường Cổ Nhuế 1, quận Bắc Từ Liêm, thành phố Hà Nội
+                        </span>
+                <span class="contact">
+                            <svg id="Layer_1" width="10" height="10" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.6 9.69"><title>icon-phone</title><path d="M9.18,7a1.21,1.21,0,0,1,0,1.82,2.58,2.58,0,0,1-.64.58A1.42,1.42,0,0,1,8,9.66a4.37,4.37,0,0,1-.59,0A4.51,4.51,0,0,1,4.89,8.58,15.32,15.32,0,0,1,2.75,6.74,14.68,14.68,0,0,1,.59,3.8a3.3,3.3,0,0,1-.5-2.53A1.7,1.7,0,0,1,.86.36l0,0A1.64,1.64,0,0,1,1.76,0,1.22,1.22,0,0,1,2.7.5l0,0a10.27,10.27,0,0,1,.88,1.3,1.34,1.34,0,0,1,0,1.45,1.39,1.39,0,0,0-.33.64,1.66,1.66,0,0,0,.36.49l0,0c.43.5.67.76.71.8s0,0,0,0l.06,0,0,.06c.37.36.63.62.8.77l0,0c.17.15.28.22.33.22A2.63,2.63,0,0,0,6.45,6a.76.76,0,0,1,.46-.14,2.41,2.41,0,0,1,1.19.42A5.21,5.21,0,0,1,9.18,7Z"/></svg>
+                            ĐT: (84.24)3 9747 123 - Fax: (84.24) 3 9747 120
+                        </span>
+                <span class="contact">
+                            <svg id="Layer_1" width="10" height="8" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.06 8.74"><title>icon-email</title><path d="M10,0a1,1,0,0,1,.74.32,1,1,0,0,1,.32.75v6.6a1,1,0,0,1-.32.74,1,1,0,0,1-.74.33H1.06a1,1,0,0,1-.74-.33A1,1,0,0,1,0,7.67V1.07A1.06,1.06,0,0,1,.32.32,1,1,0,0,1,1.06,0ZM9.88,2.26V1.19L5.53,4.1,1.19,1.19V2.26l4.34,2.9Z"/></svg>
+                            webmaster@vsd.vn
+                        </span>
+            </div>
+            <div class="col-lg-4">
+                <div class="title-foot">Chi nhánh tại TP. Hồ Chí Minh</div>
+                <span class="contact">
+                            <svg id="Layer_1" width="7" height="10" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.41 10.43"><title>icon-map</title><path d="M1.09,1.07A3.61,3.61,0,0,1,3.71,0,3.6,3.6,0,0,1,6.32,1.07,3.48,3.48,0,0,1,7.41,3.65a6.4,6.4,0,0,1-.92,2.91,16.55,16.55,0,0,1-1.86,2.8l-.92,1.07A5.53,5.53,0,0,1,3.3,10c-.16-.19-.46-.57-.88-1.13s-.8-1.1-1.12-1.62a11.61,11.61,0,0,1-.89-1.8A4.58,4.58,0,0,1,0,3.65,3.48,3.48,0,0,1,1.09,1.07Zm1.68,3.5A1.26,1.26,0,0,0,3.71,5a1.24,1.24,0,0,0,.93-.39A1.23,1.23,0,0,0,5,3.65a1.31,1.31,0,0,0-1.32-1.3,1.29,1.29,0,0,0-.94.38,1.25,1.25,0,0,0-.38.92A1.22,1.22,0,0,0,2.77,4.57Z"/></svg>
+                            151 Nguyễn Đình Chiểu, phường 6, quận 3, TP. Hồ Chí Minh
+                        </span>
+                <span class="contact">
+                            <svg id="Layer_1" width="10" height="10" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.6 9.69"><title>icon-phone</title><path d="M9.18,7a1.21,1.21,0,0,1,0,1.82,2.58,2.58,0,0,1-.64.58A1.42,1.42,0,0,1,8,9.66a4.37,4.37,0,0,1-.59,0A4.51,4.51,0,0,1,4.89,8.58,15.32,15.32,0,0,1,2.75,6.74,14.68,14.68,0,0,1,.59,3.8a3.3,3.3,0,0,1-.5-2.53A1.7,1.7,0,0,1,.86.36l0,0A1.64,1.64,0,0,1,1.76,0,1.22,1.22,0,0,1,2.7.5l0,0a10.27,10.27,0,0,1,.88,1.3,1.34,1.34,0,0,1,0,1.45,1.39,1.39,0,0,0-.33.64,1.66,1.66,0,0,0,.36.49l0,0c.43.5.67.76.71.8s0,0,0,0l.06,0,0,.06c.37.36.63.62.8.77l0,0c.17.15.28.22.33.22A2.63,2.63,0,0,0,6.45,6a.76.76,0,0,1,.46-.14,2.41,2.41,0,0,1,1.19.42A5.21,5.21,0,0,1,9.18,7Z"/></svg>
+                            ĐT: (84.28)3 9330755 - Fax: (84.28)3 9330754
+                        </span>
+                <span class="contact">
+                            <svg id="Layer_1" width="10" height="8" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.06 8.74"><title>icon-email</title><path d="M10,0a1,1,0,0,1,.74.32,1,1,0,0,1,.32.75v6.6a1,1,0,0,1-.32.74,1,1,0,0,1-.74.33H1.06a1,1,0,0,1-.74-.33A1,1,0,0,1,0,7.67V1.07A1.06,1.06,0,0,1,.32.32,1,1,0,0,1,1.06,0ZM9.88,2.26V1.19L5.53,4.1,1.19,1.19V2.26l4.34,2.9Z"/></svg>
+                            webmaster@vsd.vn
+                        </span>
+            </div>
+        </div>
+    </div>
+    <a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+</footer>
+
+</body>
+</html>

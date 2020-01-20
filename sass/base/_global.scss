@@ -1060,7 +1060,15 @@ input.error{
 
 
 // hiệu ứng loader
-
+.loader-wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 99999999999999;
+}
 .loader {
   position: fixed;
   top: calc(50% - 32px);

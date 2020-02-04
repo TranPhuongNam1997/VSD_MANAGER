@@ -47,6 +47,11 @@ input:focus,textarea:focus{
     color: #ED1111;
   }
 }
+.datepicker-vsd{
+  background: #fff url(../img/icon-cacular.svg) no-repeat;
+  background-position: center right 12px;
+  cursor: pointer;
+}
 .input-enter{
   input{
     width: 100%;
@@ -61,11 +66,7 @@ input:focus,textarea:focus{
     background: #EDEDED;
     color: #A0A0A0;
   }
-  .datepicker-vsd{
-    background: #fff url(../img/icon-cacular.svg) no-repeat;
-    background-position: center right 12px;
-    cursor: pointer;
-  }
+
   .items-select{
     width: 100%;
     border: 1px solid #cecece;
@@ -139,6 +140,7 @@ input.error{
 .info-item-list{
   position: relative;
   margin: 0 8px;
+  display: inline-block;
   span{
     position: relative;
     i{
@@ -215,6 +217,7 @@ input.error{
 .edit-item-list{
   position: relative;
   margin: 0 8px;
+  display: inline-block;
   span{
     position: relative;
     i{
@@ -289,6 +292,7 @@ input.error{
 .delete-item-list{
   position: relative;
   margin: 0 8px;
+  display: inline-block;
   span{
     position: relative;
     i{
@@ -363,6 +367,7 @@ input.error{
 .download-item-list{
   position: relative;
   margin: 0 8px;
+  display: inline-block;
   span{
     position: relative;
     i{
@@ -437,6 +442,7 @@ input.error{
 .set-item-list{
   position: relative;
   margin: 0 8px;
+  display: inline-block;
   span{
     position: relative;
     i{
@@ -512,6 +518,7 @@ input.error{
 .list-item-main{
   position: relative;
   margin: 0 8px;
+  display: inline-block;
   span{
     position: relative;
     width: 16px;
@@ -593,6 +600,7 @@ input.error{
 .reset-item-list{
   position: relative;
   margin: 0 8px;
+  display: inline-block;
   span{
     position: relative;
     width: 15px;
@@ -672,10 +680,254 @@ input.error{
   }
 }
 
+.add-group-list{
+  position: relative;
+  margin: 0 8px;
+  display: inline-block;
+  span{
+    position: relative;
+    width: 15px;
+    height: 14px;
+    img{
+      width: 17px;
+      height: 16px;
+    }
+    .imgafter-hv{
+      display: none;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: $c-bl;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: none;
+    }
+  }
+  &:hover{
+    span{
+      i{
+        background: $c-bl;
+        font-size: 13px;
+        padding-top: 2px;
+        color: $c-wh;
+      }
+      &:after{
+        display: block;
+      }
+      .imgafter-hv{
+        display: inline;
+        position: relative;
+        z-index: 9;
+      }
+      .imgbefore-hv{
+        display: none;
+      }
+    }
+  }
 
+  &:before{
+    content: 'Phân quyền';
+    color: #fff;
+    background: #164989;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    display: none;
+    pointer-events: none;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: 5px solid transparent;
+    border-top: 5px solid #164989;
+    border-left: 5px solid transparent;
+    display: none;
+  }
+  &:hover:before{
+    display: block;
+  }
+  &:hover:after{
+    display: block;
+  }
+}
 
+.aprrove-list{
+  position: relative;
+  margin: 0 8px;
+  display: inline-block;
+  span{
+    position: relative;
+    width: 15px;
+    height: 14px;
+    img{
+      width: 15px;
+      height: 14px;
+    }
+    .imgafter-hv{
+      display: none;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: $c-bl;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: none;
+    }
+  }
+  &:hover{
+    span{
+      i{
+        background: $c-bl;
+        font-size: 13px;
+        padding-top: 2px;
+        color: $c-wh;
+      }
+      &:after{
+        display: block;
+      }
+      .imgafter-hv{
+        display: inline;
+        position: relative;
+        z-index: 9;
+      }
+      .imgbefore-hv{
+        display: none;
+      }
+    }
+  }
 
+  &:before{
+    content: 'Duyệt';
+    color: #fff;
+    background: #164989;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    display: none;
+    pointer-events: none;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: 5px solid transparent;
+    border-top: 5px solid #164989;
+    border-left: 5px solid transparent;
+    display: none;
+  }
+  &:hover:before{
+    display: block;
+  }
+  &:hover:after{
+    display: block;
+  }
+}
 
+.reject-list{
+  position: relative;
+  margin: 0 8px;
+  display: inline-block;
+  span{
+    position: relative;
+    width: 15px;
+    height: 14px;
+    img{
+      width: 15px;
+      height: 14px;
+    }
+    .imgafter-hv{
+      display: none;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: $c-bl;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: none;
+    }
+  }
+  &:hover{
+    span{
+      i{
+        background: $c-bl;
+        font-size: 13px;
+        padding-top: 2px;
+        color: $c-wh;
+      }
+      &:after{
+        display: block;
+      }
+      .imgafter-hv{
+        display: inline;
+        position: relative;
+        z-index: 9;
+      }
+      .imgbefore-hv{
+        display: none;
+      }
+    }
+  }
+
+  &:before{
+    content: 'Từ chối';
+    color: #fff;
+    background: #164989;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    display: none;
+    pointer-events: none;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: 5px solid transparent;
+    border-top: 5px solid #164989;
+    border-left: 5px solid transparent;
+    display: none;
+  }
+  &:hover:before{
+    display: block;
+  }
+  &:hover:after{
+    display: block;
+  }
+}
 
 //end info-item-list
 
@@ -715,7 +967,28 @@ input.error{
     font-size: 14px;
   }
 }
+
 .content-diary{
+  max-height: calc(100vh - 30px);
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #164989;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #164989;
+  }
   .feedback-admin{
     margin-bottom: 14px;
     .adminname-send{
@@ -825,6 +1098,7 @@ input.error{
 //css popup
 .modal.modal-vsd{
   padding-right: 0!important;
+  background: rgba(0, 0, 0, 0.7);
   .size-modal{
     max-width: 620px;
     width: 100%;
@@ -854,7 +1128,7 @@ input.error{
   transform: translate(-50%, -50%);
 }
 .mdl-header{
-  padding: 9px 21px;
+  padding: 9px 17px 9px 21px;
   background: $c-bl;
   display: flex;
   align-items: center;
@@ -875,7 +1149,9 @@ input.error{
   }
 }
 .mdl-main{
-  padding: 23px 18px 10px;
+  padding: 23px 23px 10px;
+  overflow: auto;
+  max-height: calc(100vh - 150px);
   .feedback-user{
     .user-content-fb{
       border-radius: 4px;

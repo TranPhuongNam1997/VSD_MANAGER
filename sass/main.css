@@ -40,8 +40,15 @@ body {
   height: 9px;
   clear: both; }
 
+.clearfix-20 {
+  height: 20px;
+  clear: both; }
+
 .formgroup-vsd {
   margin-bottom: 9px; }
+
+.clr-red {
+  color: #ED1111; }
 
 .title-info {
   display: inline-block;
@@ -153,6 +160,7 @@ input.error {
       height: 8px;
       font-size: 9px;
       padding: 3px;
+      text-align: center;
       box-sizing: content-box;
       background: #777;
       color: #fff;
@@ -219,7 +227,8 @@ input.error {
       color: #777777;
       vertical-align: top;
       position: relative;
-      z-index: 9; }
+      z-index: 9;
+      text-align: center; }
     .edit-item-list span:after {
       content: '';
       position: absolute;
@@ -280,7 +289,8 @@ input.error {
       color: #777777;
       vertical-align: top;
       position: relative;
-      z-index: 9; }
+      z-index: 9;
+      text-align: center; }
     .delete-item-list span:after {
       content: '';
       position: absolute;
@@ -467,7 +477,7 @@ input.error {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-58%, -50%);
+      transform: translate(-50%, -50%);
       background: #164989;
       width: 28px;
       height: 28px;
@@ -1005,30 +1015,31 @@ input.error {
 
 .group-field-popup {
   margin-bottom: 15px; }
-  .group-field-popup .row-vsd .field-input-popup {
-    width: 100%;
-    border: 1px solid #cecece;
-    height: 35px;
-    padding-left: 16px;
-    padding-right: 16px;
-    color: #262626;
-    border-radius: 3px; }
-  .group-field-popup .row-vsd .area-field-popup {
-    width: 100%;
-    border: 1px solid #cecece;
-    height: 85px;
-    padding: 5px 16px;
-    color: #262626;
-    border-radius: 3px; }
-  .group-field-popup .row-vsd .typebr-input-popup {
-    width: 100%;
-    padding: 10px 16px;
-    color: #262626;
-    border-bottom: 1px solid #cecece; }
+  .group-field-popup .row-vsd {
+    align-items: center; }
+    .group-field-popup .row-vsd .field-input-popup {
+      width: 100%;
+      border: 1px solid #cecece;
+      height: 35px;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: #262626;
+      border-radius: 3px; }
+    .group-field-popup .row-vsd .area-field-popup {
+      width: 100%;
+      border: 1px solid #cecece;
+      height: 85px;
+      padding: 5px 16px;
+      color: #262626;
+      border-radius: 3px; }
+    .group-field-popup .row-vsd .typebr-input-popup {
+      width: 100%;
+      padding: 10px 16px;
+      color: #262626;
+      border-bottom: 1px solid #cecece; }
   .group-field-popup .name-field-popup {
     color: #606060;
-    display: block;
-    padding-top: 11px; }
+    display: block; }
 
 .assigned-word-block .txt-assigned {
   font-size: 14px;
@@ -1347,7 +1358,8 @@ input.error {
           width: 28px;
           height: 4px;
           background: #fff;
-          border-radius: 30px; }
+          border-radius: 30px;
+          pointer-events: none; }
         .header .header-top .navigation-vsd .menu li:hover:after {
           transform: translateX(-50%) scaleX(1);
           transition: all 0.3s; }
@@ -1756,7 +1768,7 @@ html, body {
       color: #969696; }
   .taskremind-block .btn-add {
     margin-right: 50px; }
-  .taskremind-block .datetimepicker-vsd {
+  .taskremind-block .datepicker-vsd {
     width: 171px;
     height: 35px;
     border: 1px solid #E8E8E8;

@@ -230,6 +230,17 @@ html,body{
 .sc-data-top{
   margin-bottom: 20px;
 }
+.heading-aligncenter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .btn-add{
+    margin-left: 10px;
+    margin-bottom: 13px;
+    padding: 0 20px;
+  }
+}
+
 .title-wrap{
   display: inline-block;
   color: $c-bl;

@@ -50,6 +50,11 @@ body {
 .clr-red {
   color: #ED1111; }
 
+.dp-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
 .title-info {
   display: inline-block;
   font-size: 14px;
@@ -824,11 +829,13 @@ input.error {
   .content-diary::-webkit-scrollbar {
     width: 5px; }
   .content-diary::-webkit-scrollbar-track {
-    background: #f1f1f1; }
+    background: transparent; }
   .content-diary::-webkit-scrollbar-thumb {
-    background: #164989; }
+    background: rgba(155, 155, 155, 0.6705882353);
+    border-radius: 30px; }
   .content-diary::-webkit-scrollbar-thumb:hover {
-    background: #164989; }
+    background: rgba(155, 155, 155, 0.6705882353);
+    border-radius: 30px; }
   .content-diary .feedback-admin {
     margin-bottom: 14px; }
     .content-diary .feedback-admin .adminname-send {
@@ -909,7 +916,9 @@ input.error {
 
 .modal.modal-vsd {
   padding-right: 0 !important;
-  background: rgba(0, 0, 0, 0.7); }
+  background: rgba(0, 0, 0, 0.7);
+  filter: blur(0px);
+  -webkit-filter: blur(0px); }
   .modal.modal-vsd .size-modal {
     max-width: 620px;
     width: 100%;
@@ -957,14 +966,27 @@ input.error {
 .mdl-main {
   padding: 23px 23px 10px;
   overflow: auto;
-  max-height: calc(100vh - 150px); }
+  max-height: calc(100vh - 150px);
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .mdl-main::-webkit-scrollbar {
+    width: 8px; }
+  .mdl-main::-webkit-scrollbar-track {
+    background: transparent; }
+  .mdl-main::-webkit-scrollbar-thumb {
+    background: rgba(155, 155, 155, 0.6705882353);
+    border-radius: 30px; }
+  .mdl-main::-webkit-scrollbar-thumb:hover {
+    background: rgba(155, 155, 155, 0.6705882353);
+    border-radius: 30px; }
   .mdl-main .feedback-user .user-content-fb {
     border-radius: 4px; }
   .mdl-main .feedback-admin .admin-content-fb {
     border-radius: 4px; }
 
 .mdl-footer {
-  padding: 10px 18px 22px;
+  padding: 10px 23px 22px;
   text-align: right; }
   .mdl-footer .form-send-feedback {
     text-align: right; }
@@ -1680,6 +1702,15 @@ html, body {
 .sc-data-top {
   margin-bottom: 20px; }
 
+.heading-aligncenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .heading-aligncenter .btn-add {
+    margin-left: 10px;
+    margin-bottom: 13px;
+    padding: 0 20px; }
+
 .title-wrap {
   display: inline-block;
   color: #164989;
@@ -2139,6 +2170,10 @@ input[name="daterange"] {
   border: none;
   border-radius: 3px;
   transition: all 0.3s; }
+  .btn-blue img, .btn-light-blue img, .btn-red img {
+    width: 16px;
+    margin-right: 4px;
+    vertical-align: middle; }
 
 .btn-blue {
   transition: all 0.3s; }

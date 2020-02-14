@@ -14,6 +14,10 @@ $( document ).ready(function() {
             $('#back-to-top').hide();
         }
     });
+    //js select
+    $('select').click(function () {
+        $(this).toggleClass('select-icon-up');
+    });
 
     //script sidebar
 

@@ -817,3 +817,17 @@ input[name="daterange"]{
 //  content: "";
 //  background: no-repeat 50%/50% 50%;
 //}
+
+.txt-info-issuers{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 0;
+  margin-bottom: 11px;
+  h3{
+    color: #164989;
+    font-size: 13px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+}

@@ -55,6 +55,20 @@ body {
   align-items: center;
   justify-content: space-between; }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background: url("../img/icon-caret-down-02.svg");
+  background-repeat: no-repeat;
+  background-position: center right 16px;
+  background-size: 8px 5px; }
+  select.select-icon-up {
+    background: #fff url("../img/icon-up-select-03.svg") no-repeat;
+    background-position: center right 16px;
+    background-size: 8px 5px; }
+
 .title-info {
   display: inline-block;
   font-size: 14px;
@@ -437,7 +451,7 @@ input.error {
   .set-item-list:hover span:after {
     display: block; }
   .set-item-list:before {
-    content: 'Cài đặt';
+    content: 'Phân quyền';
     color: #fff;
     background: #164989;
     padding: 5px 10px;
@@ -632,7 +646,7 @@ input.error {
   .add-group-list:hover span .imgbefore-hv {
     display: none; }
   .add-group-list:before {
-    content: 'Phân quyền';
+    content: 'Xếp nhóm';
     color: #fff;
     background: #164989;
     padding: 5px 10px;
@@ -2114,6 +2128,18 @@ input[name="daterange"] {
       border-radius: 3px;
       resize: none;
       padding: 8px 10px; }
+
+.txt-info-issuers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 0;
+  margin-bottom: 11px; }
+  .txt-info-issuers h3 {
+    color: #164989;
+    font-size: 13px;
+    margin-bottom: 0;
+    font-weight: 700; }
 
 .footer {
   padding-top: 25px;
